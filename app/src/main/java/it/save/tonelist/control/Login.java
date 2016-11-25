@@ -2,8 +2,8 @@ package it.save.tonelist.control;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.google.firebase.database.DatabaseReference;
@@ -12,7 +12,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import it.save.tonelist.R;
 
 public class Login extends AppCompatActivity {
-
+    FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+    DatabaseReference databaseReference = firebaseDatabase.getReference();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +23,7 @@ public class Login extends AppCompatActivity {
 
     public void iniciarSesion(View v){
 
-startActivity(new Intent(getApplicationContext(),IniciarSesion.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        startActivity(new Intent(getApplicationContext(),IniciarSesion.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
 
     }
 
