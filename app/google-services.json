@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "927504435597",
+    "firebase_url": "https://tonelist-a07a2.firebaseio.com",
+    "project_id": "tonelist-a07a2",
+    "storage_bucket": "tonelist-a07a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927504435597:android:46705980a9b6f764",
+        "android_client_info": {
+          "package_name": "it.save.tonelist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927504435597-lcia5jnb3qqr6l5bqeofu2t8067nqr98.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.save.tonelist",
+            "certificate_hash": "32222BD90DFEA09B84A6FDFF089C6D7B756A5A45"
+          }
+        },
+        {
+          "client_id": "927504435597-psqcq7v3rjhhvh7bmev353jlhaumffvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvAQ5NvmLDcRDvBrA_BcrLYlxyA3GsqLE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927504435597-psqcq7v3rjhhvh7bmev353jlhaumffvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

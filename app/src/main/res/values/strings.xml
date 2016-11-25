@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ToneList</string>
+    <string name="slogan">¡Dile no a la dictadura  musical!.</string>
+    <string name="sinCuenta">¿No tienes una cuenta?</string>
+    <string name="iniciarSesion">Iniciar Sesión</string>
+    <string name="votarSinRegistro">Comenzar a votar!</string>
+    <string name="registrate">Regístrate!</string>
+    <string name="mensajeQr">Escribe el código o escanea el QR de la fiesta.</string>
+    <string name="escanearQR">Escanear QR</string>
+    <string name="escribeElCodigo">Escribe el código</string>
+    <string name="validar">Validar</string>
+    <string name="lista_principal">Lista Principal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_lista">Lista</string>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="entrar">Entrar</string>
+    <string name="olvide_contrasena">Olvidé mi contraseña</string>
+
+
+</resources>

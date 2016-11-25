@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_29177641a6dd2723d6a4ef623b7c0e3c5a691ac2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.8.0_8bfaafa72c1e655d5033af9eb0ec9066e89f1976/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_6fe8afbd6ac5f7b727a9d4fcc728bf8d9001a06d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_75e52c1a6db2e2091d02eef09d54f7d429294d5d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="f29a98e217ba886f2e98b4528fd0036d01884840">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ceb0af3252978de22eece6ee9ff2e0af0aefaca0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.2.1_af34ea6b39b8eb23666874faf978dce5e4981de3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_be773fe3e5153432d9cc44301fa269cef3ae0880/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_224915285acd853793169055e97aaf461b47b5ce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_2c45a17f7fe1534779c8405621b91ce69ebba8a0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_bb3ce9f76140975b2adca21d44f6d3b7154fd266/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.2.1_60803ac9590e7774f240c6f0bbea1021ba3a7fdb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_a4cca963687e673880338aaf2a8c5beb0a4da5d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="1555672984e9920011ba27fdcd0d84328d678de3">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_1a815211b291e24faa36c933fc815c8e06ccc775/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_b9145a7aaa9cdd726348b5c01060a1083f92531d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_14d2d5ba23d20eeaeb67f8a8b3e825713fa71b7a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_faa08f10fc07686a58fa853ff8ede7667bc3b2cb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_50ab14449d7c4d6b61cfe1075a594f364842a86e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.8.0_69f85cb09a4fa401527dde414d84f38fcec41e91/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="a75c78146615cda170d4b42ec67f22dde7c50010">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3524f344ac7e7d1d17c7434981b8611433680505/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_054ff4cea6d4edb3856a51e393dd91f417ffd8f3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_23f2eda593630c22f1fd2571e59c8beaeb65b02d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="03df48d3713661d66ad024b1e406259a4c26fcac">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.8.0_d2ff657150c9fad2a965637fb0ce67988852196a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_493cc04e9e779204cf714c466062015089556fbb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="9ff04cc3470178a44512624036751a803418c2ca">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.8.0_d436a98720636ce940a960f3d11d91faa8cf9d5c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_ba581e5054d3165dad1b52ab83baa06e29249804/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_2151fe71f3a7b8b45b6be566716c40ebc3fbb060/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.8.0_0d0fa18a1ca577b78e792209ea3f2872a7383956/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_21e9faafc8e5d005b8d0382b92773607a33c38d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.8.0_93b9ad1c1d44f09c928c83efd141f6b0d00e1721/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="9f1fa2e04781f431dde257fbdf05fc2d53418ae2">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a12d0450abe5a754e325e510e9c473ed753ab9d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_db18416d4e39d731ca1bcc2ef6e38c134ccbaaf0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_3c2f31d6bd0491738917359ae32cb24c7a7a007c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_5232ad2571f74bd2eb66cf872b0243778bc293ea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_c8708fe5bb7659ac688f1dec23d2d031a718ca71/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="5f47ede9561595584dca71104baa0fecb36dda87">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.8.0_aee7bf917af4d14782d393b5c7f4f27dfcf6a488/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_065adb3035cfab01a01872c3307ce3d3c920d9e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_bae9244ed99f0a00fdb3974f8320febc9efcada7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_c6992289270147a2b5b4a68b730e673bae766f6b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_d0596ae98b66ce4adefae382e31db4c6f3103574/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_001b445ba80cf257f9356dc798299c0fd97484ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_5744b2edc9bc02d3816b865449d87060ccd51a33/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_c7537d678f70abbf07f9db8249c3176bc8b5485b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_41aae0e653fc6186d12b7609b737a3571d09c63e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_3cdb72e9c080e7a3dec050a4ad8ae36f67a6f778/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="190a642ba16d1421296a4d794606279b80039c59">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.8.0_0eb525bc3f701e9fd5451e28ddf59082018f41ea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_4c60f4a30f0b479550219e964d08b825ed422e38/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_e87d2f0d674652012f0abefee66cdd40ee1b1dd0/classes.dex" />
+    </item>
+
+</items>

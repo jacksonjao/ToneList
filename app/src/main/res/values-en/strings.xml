@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ToneList</string>
+    <string name="slogan">Say no to musical dictatorship!.</string>
+    <string name="iniciarSesion">Login</string>
+    <string name="votarSinRegistro">Start voting!</string>
+    <string name="sinCuenta">Don\'t have an account?</string>
+    <string name="font_family_regular" translatable="false"></string>
+    <string name="registrate">Sign Up!</string>
+    <string name="Escanear">Scan QR code</string>
+    <string name="escanearQR">Scan QR code</string>
+</resources>

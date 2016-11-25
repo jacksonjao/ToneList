@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="it.save.tonelist.control.LeerQr"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:layout_centerVertical="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv_slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="40dp"
+            android:fontFamily="@string/font_family_light"
+            android:text="@string/mensajeQr"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/big" />
+
+        <Button
+            android:id="@+id/btn_escanearQr"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btn_validar"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/botones_principales"
+            android:fontFamily="@string/font_family_regular"
+            android:text="@string/escanearQR"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/medium"
+            />
+
+        <EditText
+            android:id="@+id/et_escribeCodigo"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="@string/escribeElCodigo"
+            android:fontFamily="@string/font_family_light"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:layout_alignTop="@+id/btn_validar"
+            android:textSize="@dimen/medium"
+            android:layout_alignStart="@+id/btn_escanearQr" />
+
+        <Button
+            android:id="@+id/btn_validar"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/botones_principales"
+            android:fontFamily="@string/font_family_regular"
+            android:text="@string/validar"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/medium"
+            android:layout_below="@+id/tv_slogan"
+            android:layout_alignEnd="@+id/btn_escanearQr"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="validar"
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>
