@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:fontFamily="@string/font_family_black"
+            android:text="Usuario"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/medium" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        android:fontFamily="@string/font_family_medium"
+        android:text="DJ"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/medium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+android:layout_marginLeft="20dp"
+        android:fontFamily="@string/font_family_regular"
+        android:text="Mis fiestas"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/medium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@string/font_family_regular"
+        android:text="Cambiar de rol"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/medium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@string/font_family_regular"
+        android:text="Cerrar sesión"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/medium"
+android:layout_marginBottom="20dp"
+        android:onClick="sesion"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        android:fontFamily="@string/font_family_medium"
+        android:text="Tonelist"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/medium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@string/font_family_regular"
+        android:text="Nuestros aliados"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/medium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@string/font_family_regular"
+        android:text="Contacto"
+        android:textColor="@color/colorWhite"
+
+        android:textSize="@dimen/medium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@string/font_family_regular"
+        android:text="Acerca de"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/medium"
+
+        />
+</LinearLayout>
+</RelativeLayout>

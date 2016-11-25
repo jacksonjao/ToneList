@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/colorPrimaryTransparent"
+    android:elevation="4dp"
+    >
+
+
+
+    <TextView
+        android:id="@+id/tv_listaPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@string/font_family_black"
+        android:text="@string/lista_principal"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/medium"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageButton
+        android:id="@+id/bnt_menu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:background="@color/colorTransparent"
+        android:src="@drawable/icon_menu_responsive"
+        android:onClick="menu"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        />
+
+    <SearchView
+        android:id="@+id/sv_buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:searchIcon="@drawable/icon_search_responsive"
+        android:saveEnabled="true"
+        android:layout_centerVertical="true"
+    android:layout_marginRight="20dp"
+        />
+
+</RelativeLayout>
