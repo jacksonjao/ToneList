@@ -18,6 +18,6 @@
     <string name="contrasena">Contraseña</string>
     <string name="entrar">Entrar</string>
     <string name="olvide_contrasena">Olvidé mi contraseña</string>
-
-
+    <string name="confirmar_contrasena">Confirmar contraseña</string>
+    <string name="registrarse">Registrarse</string>
 </resources>

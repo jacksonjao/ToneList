@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registrarse"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    tools:context="it.save.tonelist.control.Registrarse"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="120dp">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv_slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:fontFamily="@string/font_family_medium"
+            android:text="@string/registrarse"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/big"
+
+            />
+
+        <EditText
+            android:id="@+id/et_correo"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_slogan"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@string/font_family_regular"
+            android:text="@string/correo_electronico"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/medium" />
+
+        <EditText
+            android:id="@+id/et_contrasena"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_correo"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:fontFamily="@string/font_family_regular"
+            android:text="@string/contrasena"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/medium" />
+
+        <EditText
+            android:id="@+id/et_confirmar_contrasena"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_contrasena"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:fontFamily="@string/font_family_regular"
+            android:text="@string/confirmar_contrasena"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/medium" />
+
+
+        <Button
+            android:id="@+id/btn_registrarse"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/et_confirmar_contrasena"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/botones_principales"
+            android:fontFamily="@string/font_family_regular"
+            android:onClick="entrar"
+            android:text="@string/registrarse"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/medium" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

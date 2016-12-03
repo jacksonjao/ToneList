@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".control.Login" />
         <activity android:name=".control.LeerQr" />
-        <activity android:name=".control.IniciarSesion"></activity>
+        <activity android:name=".control.IniciarSesion" />
+        <activity android:name=".control.Registrarse"></activity>
     </application>
 
 </manifest>
