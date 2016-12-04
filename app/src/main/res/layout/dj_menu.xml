@@ -26,7 +26,7 @@
             android:layout_centerVertical="true"
             android:layout_margin="20dp"
             android:fontFamily="@string/font_family_black"
-            android:text="@string/fiesta"
+            android:text="@string/usuario"
             android:textColor="@color/colorWhite"
             android:textSize="@dimen/medium" />
     </RelativeLayout>
@@ -35,11 +35,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+
         android:fontFamily="@string/font_family_medium"
-        android:text="@string/espectador"
+        android:text="@string/dj"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/medium" />
-
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,37 +47,10 @@
         android:layout_marginTop="5dp"
 android:layout_marginLeft="20dp"
         android:fontFamily="@string/font_family_regular"
-        android:text="@string/votar_por_canciones"
+        android:text="@string/mis_fiestas"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/medium"
-        android:onClick="votar"
-
-        />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:fontFamily="@string/font_family_regular"
-        android:text="@string/recomendar_canciones"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/medium"
-        android:onClick="recomendarCanciones"
-
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:fontFamily="@string/font_family_regular"
-        android:text="@string/canciones_recomendadas"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/medium"
-        android:onClick="cancionesRecomendadas"
-
+        android:onClick="misFiestas"
         />
 
     <TextView
@@ -98,20 +71,6 @@ android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:fontFamily="@string/font_family_regular"
-        android:text="@string/salir_del_lugar"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/medium"
-        android:onClick="salir"
-
-        />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:fontFamily="@string/font_family_regular"
         android:text="@string/cerrar_sesion"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/medium"
@@ -119,14 +78,12 @@ android:layout_marginBottom="20dp"
         android:onClick="cerrarSesion"
         />
 
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:fontFamily="@string/font_family_medium"
-        android:text="Tonelist"
+        android:text="@string/Tonelist"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/medium" />
 
@@ -167,7 +124,6 @@ android:layout_marginBottom="20dp"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/medium"
         android:onClick="nosotros"
-
 
         />
 </LinearLayout>

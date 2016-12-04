@@ -23,5 +23,21 @@
     <string name="quien_eres_hoy">¿Quién eres el día de hoy?</string>
     <string name="soy_dj">Soy el DJ</string>
     <string name="soy_espectador">Soy un espectador</string>
+    <string name="fiesta">Fiesta</string>
+    <string name="espectador">Espectador</string>
+    <string name="votar_por_canciones">Votar por canciones</string>
+    <string name="recomendar_canciones">Recomendar canciones</string>
+    <string name="canciones_recomendadas">Canciones que recomendaron</string>
+    <string name="cambiar_rol">Cambiar de rol</string>
+    <string name="salir_del_lugar">Salir de este lugar</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="Tonelist">Tonelist</string>
+    <string name="nuestros_aliados">Nuestros aliados</string>
+    <string name="contacto">Contacto</string>
+    <string name="nosotros">Nosotros</string>
+    <string name="usuario">Usuario</string>
+    <string name="dj">DJ</string>
+    <string name="mis_fiestas">Mis fiestas</string>
+
 
 </resources>
