@@ -38,7 +38,6 @@ public class MisFiestas extends AppCompatActivity {
 
     public void menu(View v) {
         drawerLayout.openDrawer(menu);
-
     }
 
     public void carta(View v){

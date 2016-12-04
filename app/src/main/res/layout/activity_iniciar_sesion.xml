@@ -52,6 +52,7 @@
         <EditText
             android:id="@+id/et_contrasena"
             android:layout_width="250dp"
+            android:inputType="textPassword"
             android:layout_height="wrap_content"
             android:layout_below="@+id/et_correo"
             android:layout_centerHorizontal="true"
