@@ -86,7 +86,7 @@
             android:layout_margin="5dp"
             android:background="@drawable/botones_principales"
             android:fontFamily="@string/font_family_regular"
-            android:onClick="entrar"
+            android:onClick="registrarse"
             android:text="@string/registrarse"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
