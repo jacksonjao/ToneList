@@ -6,16 +6,14 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
 
-    tools:context="it.save.tonelist.control.Login"
+    tools:context="it.save.tonelist.control.IniciarSesion"
 
     >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="120dp"
-        android:layout_centerVertical="true"
-        >
+        android:layout_marginTop="50dp">
 
         <ImageView
             android:id="@+id/iv_logo"
@@ -46,10 +44,11 @@
             android:layout_below="@+id/tv_slogan"
             android:layout_centerHorizontal="true"
             android:fontFamily="@string/font_family_regular"
-            android:text="@string/correo_electronico"
+            android:hint="@string/correo_electronico"
             android:textAllCaps="false"
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/medium" />
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"            android:textSize="@dimen/medium" />
+
         <EditText
             android:id="@+id/et_contrasena"
             android:layout_width="250dp"
@@ -58,10 +57,10 @@
             android:layout_centerHorizontal="true"
             android:layout_margin="10dp"
             android:fontFamily="@string/font_family_regular"
-            android:text="@string/contrasena"
+            android:hint="@string/contrasena"
             android:textAllCaps="false"
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/medium" />
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"            android:textSize="@dimen/medium" />
 
 
         <Button
@@ -70,28 +69,25 @@
             android:layout_height="50dp"
             android:layout_below="@+id/et_contrasena"
             android:layout_centerHorizontal="true"
-
             android:background="@drawable/botones_principales"
             android:fontFamily="@string/font_family_regular"
+            android:onClick="entrar"
             android:text="@string/entrar"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/medium"
-android:onClick="entrar"
-            />
+            android:textSize="@dimen/medium" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-          android:layout_below="@+id/btn_entrar"
-          android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_entrar"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:fontFamily="@string/font_family_black"
+            android:onClick="olvideContrasena"
             android:text="@string/olvide_contrasena"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/medium"
-            android:onClick="olvideContrasena"
-            />
+            android:textSize="@dimen/medium" />
 
     </RelativeLayout>
 
@@ -109,9 +105,8 @@ android:onClick="entrar"
             android:layout_height="wrap_content"
             android:fontFamily="@string/font_family_regular"
             android:text="@string/sinCuenta"
-            android:textSize="@dimen/medium"
             android:textColor="@color/colorWhite"
-            />
+            android:textSize="@dimen/medium" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -119,10 +114,10 @@ android:onClick="entrar"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/tv_sinCuenta"
             android:fontFamily="@string/font_family_black"
+            android:onClick="registrarse"
             android:text="@string/registrate"
             android:textColor="@color/colorWhite"
             android:textSize="@dimen/medium"
-            android:onClick="registrarse"
 
             />
     </RelativeLayout>

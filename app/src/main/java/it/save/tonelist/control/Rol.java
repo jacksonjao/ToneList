@@ -20,7 +20,8 @@ public class Rol extends AppCompatActivity {
     }
 
     public void dj(View v){
-        Toast.makeText(this,"Aún no se crea esta actividad",Toast.LENGTH_SHORT).show();    }
+        startActivity(new Intent(getApplicationContext(),MisFiestas.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+    }
 
     public void espectador(View v){
         startActivity(new Intent(getApplicationContext(),ListaPrincipal.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));

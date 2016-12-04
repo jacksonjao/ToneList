@@ -44,7 +44,7 @@ public class RecomendarCanciones extends AppCompatActivity implements SearchView
         //controlo el menu desplegable
         menu = (RelativeLayout) findViewById(R.id.dl_menu);
         drawerLayout = (DrawerLayout) findViewById(R.id.activity_lista);
-        drawerLayout.setScrimColor(Color.argb(220,0,0,0));
+        drawerLayout.setScrimColor(Color.argb(230,0,0,0));
         search();
         searchView.setOnQueryTextListener(this);
         validarMenu();

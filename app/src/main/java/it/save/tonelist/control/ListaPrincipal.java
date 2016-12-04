@@ -64,7 +64,7 @@ public class ListaPrincipal extends AppCompatActivity implements SearchView.OnQu
         //controlo el menu desplegable
         menu = (RelativeLayout) findViewById(R.id.dl_menu);
         drawerLayout = (DrawerLayout) findViewById(R.id.activity_lista);
-        drawerLayout.setScrimColor(Color.argb(220,0,0,0));
+        drawerLayout.setScrimColor(Color.argb(230,0,0,0));
         recyclerView = (RecyclerView) findViewById(R.id.rv_lista);
         search();
 
@@ -118,7 +118,7 @@ public class ListaPrincipal extends AppCompatActivity implements SearchView.OnQu
         SpotifyService spotify = api.getService();
         Map<String, Object> options = new HashMap<>();
         options.put(SpotifyService.OFFSET, 0);
-        options.put(SpotifyService.LIMIT, 10);
+        options.put(SpotifyService.LIMIT, 50);
 
         spotify.searchTracks(s, options, new SpotifyCallback<TracksPager>() {
             @Override

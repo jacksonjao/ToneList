@@ -39,10 +39,13 @@
     <string name="usuario">Usuario</string>
     <string name="dj">DJ</string>
     <string name="mis_fiestas">Mis fiestas</string>
-
     <string name="evento">Evento:</string>
     <string name="direccion">Dirección:</string>
     <string name="fecha">Fecha:</string>
     <string name="codigo">Código:</string>
+    <string name="canciones_votadas">Canciones votadas</string>
+    <string name="canciones_recomendadas_dj">Canciones recomendadas</string>
+    <string name="modificar_lista">Modificar lista</string>
+
 
 </resources>

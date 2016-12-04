@@ -1,6 +1,5 @@
 package it.save.tonelist.control;
 
-import android.animation.LayoutTransition;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
@@ -10,14 +9,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.SearchView;
 import android.widget.TextView;
 
 import it.save.tonelist.R;
 
-public class MisFiestas extends AppCompatActivity {
+public class Fiesta extends AppCompatActivity {
     TextView tv_listaPrincipal;
     ImageButton btn_menu;
     RelativeLayout menu;
@@ -25,8 +22,9 @@ public class MisFiestas extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mis_fiestas);
+        setContentView(R.layout.activity_fiesta);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         btn_menu = (ImageButton) findViewById(R.id.bnt_menu);
         tv_listaPrincipal = (TextView) findViewById(R.id.tv_listaPrincipal);
         //controlo el menu desplegable
@@ -41,19 +39,17 @@ public class MisFiestas extends AppCompatActivity {
 
     }
 
-    public void carta(View v){
-        startActivity(new Intent(getApplicationContext(), Fiesta.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        finish();
-    }
 
     public void validarMenu(){
-        tv_listaPrincipal.setText(getResources().getString(R.string.recomendar_canciones));
-        TextView textView=(TextView) drawerLayout.findViewById(R.id.mis_fiestas);
-        textView.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.colorAccent));
+        tv_listaPrincipal.setText(getResources().getString(R.string.mis_fiestas));
     }
 
     public void misFiestas(View v){
-        drawerLayout.closeDrawers();
+
+
+        startActivity(new Intent(getApplicationContext(), MisFiestas.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        finish();
+
     }
 
 
@@ -71,4 +67,5 @@ public class MisFiestas extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), Rol.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         finish();
     }
+
 }
