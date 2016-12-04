@@ -20,4 +20,8 @@
     <string name="olvide_contrasena">Olvidé mi contraseña</string>
     <string name="confirmar_contrasena">Confirmar contraseña</string>
     <string name="registrarse">Registrarse</string>
+    <string name="quien_eres_hoy">¿Quién eres el día de hoy?</string>
+    <string name="soy_dj">Soy el DJ</string>
+    <string name="soy_espectador">Soy un espectador</string>
+
 </resources>

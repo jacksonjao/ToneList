@@ -18,7 +18,8 @@
         <activity android:name=".control.Login" />
         <activity android:name=".control.LeerQr" />
         <activity android:name=".control.IniciarSesion" />
-        <activity android:name=".control.Registrarse"></activity>
+        <activity android:name=".control.Registrarse" />
+        <activity android:name=".control.Rol"></activity>
     </application>
 
 </manifest>

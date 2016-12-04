@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rol"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    tools:context="it.save.tonelist.control.Rol"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:layout_centerVertical="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv_slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="50dp"
+            android:fontFamily="@string/font_family_light"
+            android:text="@string/quien_eres_hoy"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/big" />
+
+        <Button
+            android:id="@+id/btn_iniciarSesion"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_slogan"
+            android:layout_centerHorizontal="true"
+         android:layout_margin="5dp"
+            android:background="@drawable/botones_principales"
+            android:fontFamily="@string/font_family_regular"
+            android:text="@string/soy_dj"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/medium"
+            android:onClick="iniciarSesion"
+            />
+
+        <Button
+            android:id="@+id/btn_votar"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btn_iniciarSesion"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/botones_principales"
+            android:fontFamily="@string/font_family_regular"
+            android:text="@string/soy_espectador"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/medium"
+            android:onClick="votar"
+            />
+
+
+
+</RelativeLayout>
+
+</RelativeLayout>
