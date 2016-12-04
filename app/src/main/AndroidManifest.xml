@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="it.save.tonelist">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -21,9 +22,10 @@
         <activity android:name=".control.IniciarSesion" />
         <activity android:name=".control.Registrarse" />
         <activity android:name=".control.Rol" />
-        <activity android:name=".control.RecomendarCanciones"></activity>
+        <activity android:name=".control.RecomendarCanciones" />
         <activity android:name=".control.ListaPrincipal" />
-
+        <activity android:name=".control.CancionesRecomendadas" />
+        <activity android:name=".control.MisFiestas"></activity>
     </application>
 
 </manifest>

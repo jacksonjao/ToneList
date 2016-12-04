@@ -8,8 +8,6 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -19,22 +17,22 @@ import android.widget.RelativeLayout;
 import android.widget.SearchView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-
 import it.save.tonelist.R;
-import kaaes.spotify.webapi.android.SpotifyApi;
 
-public class RecomendarCanciones extends AppCompatActivity implements SearchView.OnQueryTextListener  {
+
+public class CancionesRecomendadas extends AppCompatActivity implements SearchView.OnQueryTextListener {
     TextView tv_listaPrincipal;
     ImageButton btn_menu;
     SearchView searchView;
     RelativeLayout menu;
     DrawerLayout drawerLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recomendar_canciones);
+        setContentView(R.layout.activity_canciones_recomendadas);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         searchView = (SearchView) findViewById(R.id.sv_buscar);
         int searchBarId = searchView.getContext().getResources().getIdentifier("android:id/search_bar", null, null);
         final LinearLayout searchBar = (LinearLayout) searchView.findViewById(searchBarId);
@@ -44,7 +42,7 @@ public class RecomendarCanciones extends AppCompatActivity implements SearchView
         //controlo el menu desplegable
         menu = (RelativeLayout) findViewById(R.id.dl_menu);
         drawerLayout = (DrawerLayout) findViewById(R.id.activity_lista);
-        drawerLayout.setScrimColor(Color.argb(220,0,0,0));
+        drawerLayout.setScrimColor(Color.argb(220, 0, 0, 0));
         search();
         searchView.setOnQueryTextListener(this);
         validarMenu();
@@ -59,6 +57,13 @@ public class RecomendarCanciones extends AppCompatActivity implements SearchView
     public boolean onQueryTextChange(String s) {
         return false;
     }
+
+
+    public void menu(View v) {
+        drawerLayout.openDrawer(menu);
+
+    }
+
 
 
     public void search() {
@@ -85,24 +90,24 @@ public class RecomendarCanciones extends AppCompatActivity implements SearchView
         });
     }
 
-    public void menu(View v) {
-        drawerLayout.openDrawer(menu);
 
-    }
+
+
 
     public void validarMenu(){
-        tv_listaPrincipal.setText(getResources().getString(R.string.recomendar_canciones));
-        TextView textView=(TextView) drawerLayout.findViewById(R.id.tv_recomendar);
+        tv_listaPrincipal.setText(getResources().getString(R.string.canciones_recomendadas_titulo));
+        TextView textView=(TextView) drawerLayout.findViewById(R.id.tv_recomendaron);
         textView.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.colorAccent));
     }
 
     public void votar(View v) {
-        startActivity(new Intent(getApplicationContext(), ListaPrincipal.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        startActivity(new Intent(getApplicationContext(), RecomendarCanciones.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         finish();
     }
 
     public void recomendarCanciones(View v) {
-        drawerLayout.closeDrawers();
+        startActivity(new Intent(getApplicationContext(), RecomendarCanciones.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        finish();
     }
 
     public void cambiarRol(View v) {
@@ -111,8 +116,8 @@ public class RecomendarCanciones extends AppCompatActivity implements SearchView
     }
 
     public void cancionesRecomendadas(View v) {
-        startActivity(new Intent(getApplicationContext(), CancionesRecomendadas.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        finish();
+
+        drawerLayout.closeDrawers();
     }
 
 
@@ -125,4 +130,5 @@ public class RecomendarCanciones extends AppCompatActivity implements SearchView
         startActivity(new Intent(getApplicationContext(), Login.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         finish();
     }
+
 }

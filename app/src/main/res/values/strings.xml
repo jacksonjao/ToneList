@@ -28,6 +28,7 @@
     <string name="votar_por_canciones">Votar por canciones</string>
     <string name="recomendar_canciones">Recomendar canciones</string>
     <string name="canciones_recomendadas">Canciones que recomendaron</string>
+    <string name="canciones_recomendadas_titulo">Canciones recomendadas</string>
     <string name="cambiar_rol">Cambiar de rol</string>
     <string name="salir_del_lugar">Salir de este lugar</string>
     <string name="cerrar_sesion">Cerrar sesión</string>
@@ -39,5 +40,9 @@
     <string name="dj">DJ</string>
     <string name="mis_fiestas">Mis fiestas</string>
 
+    <string name="evento">Evento:</string>
+    <string name="direccion">Dirección:</string>
+    <string name="fecha">Fecha:</string>
+    <string name="codigo">Código:</string>
 
 </resources>

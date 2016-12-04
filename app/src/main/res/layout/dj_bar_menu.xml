@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:fontFamily="@string/font_family_black"
-        android:text="@string/lista_principal"
+        android:text="@string/mis_fiestas"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/medium"
         android:layout_centerVertical="true"
@@ -32,15 +32,5 @@
         android:layout_margin="20dp"
         />
 
-    <SearchView
-        android:id="@+id/sv_buscar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:searchIcon="@drawable/icon_search_responsive"
-        android:saveEnabled="true"
-        android:layout_centerVertical="true"
-    android:layout_marginRight="20dp"
-        />
 
 </RelativeLayout>

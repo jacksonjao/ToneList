@@ -57,6 +57,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Jhon/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-1.9.0_d8410f88f83885f18129d04f42817ece5a7e329e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Volumes/Documentos/Yon/Universidad Icesi/Semestre 6/Redes/ToneList/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
@@ -111,11 +120,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Jhon/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.3.1_9c263a3898a9dc9b9eb6731a459c55fcd42a15b7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="1555672984e9920011ba27fdcd0d84328d678de3">
+        sha1="340cfa20c7c5a22a65e5992baf7a61bbe8123685">
         <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_1a815211b291e24faa36c933fc815c8e06ccc775/classes.dex" />
     </item>
     <item
@@ -315,6 +333,15 @@
         revision="24.0.1"
         sha1="5f47ede9561595584dca71104baa0fecb36dda87">
         <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.8.0_aee7bf917af4d14782d393b5c7f4f27dfcf6a488/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.github.kaaes/spotify-web-api-android/0.4.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="785444f1c6a6b880b9aa0efb9a2464cb6c51f8dc">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.kaaes-spotify-web-api-android-0.4.1_8216dd63fe34a84ecf89fdbe16138ec09c798ff7/classes.dex" />
     </item>
     <item
         is-multidex="true"

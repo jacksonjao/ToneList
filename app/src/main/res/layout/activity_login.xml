@@ -98,7 +98,9 @@ android:onClick="votar"
             android:fontFamily="@string/font_family_black"
             android:text="@string/registrate"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/medium" />
+            android:textSize="@dimen/medium"
+            android:onClick="registrarse"
+            />
     </RelativeLayout>
 
 </RelativeLayout>

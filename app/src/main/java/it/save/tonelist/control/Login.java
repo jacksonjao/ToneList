@@ -27,6 +27,10 @@ startActivity(new Intent(getApplicationContext(),IniciarSesion.class).setFlags(I
     }
 
     public void votar(View v){
-        startActivity(new Intent(this,LeerQr.class));
+        startActivity(new Intent(getApplicationContext(),LeerQr.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+    }
+
+    public void registrarse(View v){
+        startActivity(new Intent(getApplicationContext(),Registrarse.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
     }
 }

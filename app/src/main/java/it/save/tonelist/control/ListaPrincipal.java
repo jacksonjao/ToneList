@@ -1,8 +1,11 @@
 package it.save.tonelist.control;
 
 import android.animation.LayoutTransition;
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -32,6 +35,8 @@ import kaaes.spotify.webapi.android.models.Track;
 import kaaes.spotify.webapi.android.models.TracksPager;
 import retrofit.client.Response;
 
+import static java.security.AccessController.getContext;
+
 public class ListaPrincipal extends AppCompatActivity implements SearchView.OnQueryTextListener {
     TextView tv_listaPrincipal;
     ImageButton btn_menu;
@@ -48,6 +53,8 @@ public class ListaPrincipal extends AppCompatActivity implements SearchView.OnQu
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_principal);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         searchView = (SearchView) findViewById(R.id.sv_buscar);
         int searchBarId = searchView.getContext().getResources().getIdentifier("android:id/search_bar", null, null);
         final LinearLayout searchBar = (LinearLayout) searchView.findViewById(searchBarId);
@@ -56,7 +63,7 @@ public class ListaPrincipal extends AppCompatActivity implements SearchView.OnQu
         tv_listaPrincipal = (TextView) findViewById(R.id.tv_listaPrincipal);
         //controlo el menu desplegable
         menu = (RelativeLayout) findViewById(R.id.dl_menu);
-        drawerLayout = (DrawerLayout) findViewById(R.id.activity_lista_principal);
+        drawerLayout = (DrawerLayout) findViewById(R.id.activity_lista);
         drawerLayout.setScrimColor(Color.argb(220,0,0,0));
         recyclerView = (RecyclerView) findViewById(R.id.rv_lista);
         search();
@@ -68,7 +75,7 @@ public class ListaPrincipal extends AppCompatActivity implements SearchView.OnQu
         recyclerView.setAdapter(itemAdapter);
         api = new SpotifyApi();
         searchView.setOnQueryTextListener(this);
-
+        validarMenu();
     }
 
 
@@ -77,10 +84,6 @@ public class ListaPrincipal extends AppCompatActivity implements SearchView.OnQu
 
     }
 
-
-    public void sesion(View v) {
-        Toast.makeText(this, "hohoh", Toast.LENGTH_SHORT).show();
-    }
 
 
 
@@ -160,5 +163,43 @@ public class ListaPrincipal extends AppCompatActivity implements SearchView.OnQu
         for (TrackSimple t : trackList) {
             System.out.println(t.name + "-" + t.album + "-" + t.imgURL);
         }
+    }
+
+
+
+    public void validarMenu(){
+        tv_listaPrincipal.setText(getResources().getString(R.string.lista_principal));
+        TextView textView=(TextView) drawerLayout.findViewById(R.id.tv_votar);
+        textView.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.colorAccent));
+    }
+
+    public void votar(View v) {
+        drawerLayout.closeDrawers();
+    }
+
+    public void recomendarCanciones(View v) {
+        startActivity(new Intent(getApplicationContext(), RecomendarCanciones.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        finish();
+    }
+
+    public void cambiarRol(View v) {
+        startActivity(new Intent(getApplicationContext(), Rol.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        finish();
+    }
+
+    public void cancionesRecomendadas(View v) {
+        startActivity(new Intent(getApplicationContext(), CancionesRecomendadas.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        finish();
+    }
+
+
+    public void salir(View v) {
+        startActivity(new Intent(getApplicationContext(), LeerQr.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        finish();
+    }
+
+    public void cerrarSesion(View v) {
+        startActivity(new Intent(getApplicationContext(), Login.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        finish();
     }
 }

@@ -32,7 +32,7 @@
                 android:background="@color/colorAccent" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="206dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
                 android:layout_toRightOf="@+id/im_cover"
@@ -43,30 +43,39 @@
 
                 <TextView
                     android:id="@+id/tv_cancion"
-                    android:layout_width="wrap_content"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:lines="1"
                     android:fontFamily="@string/font_family_regular"
                     android:text="Canción"
                     android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/small" />
+                    android:textSize="@dimen/small"
+                    android:paddingRight="20dp"
+                    />
 
                 <TextView
                     android:id="@+id/tv_artista"
-                    android:layout_width="wrap_content"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:fontFamily="@string/font_family_regular"
                     android:text="Artista"
+                    android:lines="1"
                     android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/small" />
+                    android:textSize="@dimen/small"
+                    android:paddingRight="20dp"
+                    />
 
                 <TextView
                     android:id="@+id/tv_album"
-                    android:layout_width="wrap_content"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:fontFamily="@string/font_family_regular"
                     android:text="Album"
+                    android:lines="1"
                     android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/small" />
+                    android:textSize="@dimen/small"
+                    android:paddingRight="20dp"
+                    />
             </LinearLayout>
 
 
