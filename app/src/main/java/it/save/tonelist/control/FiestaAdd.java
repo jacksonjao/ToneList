@@ -7,7 +7,9 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Matrix;
 import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -16,13 +18,22 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.net.URI;
 
 import it.save.tonelist.R;
 
@@ -38,6 +49,8 @@ public class FiestaAdd extends AppCompatActivity {
     RelativeLayout menu;
     DrawerLayout drawerLayout;
     ImageView iv_logo;
+    private StorageReference mStorageRef;
+    Uri ubicacionImage, ubicacionImageFirebase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +62,7 @@ public class FiestaAdd extends AppCompatActivity {
         listReference = firebaseDatabase.getReference().child("lists");
         user = FirebaseAuth.getInstance().getCurrentUser();
 
+        mStorageRef = FirebaseStorage.getInstance().getReference();
 
         //controlo el menu desplegable
         btn_menu = (ImageButton) findViewById(R.id.bnt_menu);
@@ -62,14 +76,8 @@ public class FiestaAdd extends AppCompatActivity {
 
 
     public void anadirFiesta(View view) {
+        subirImg(ubicacionImage);
 
-        FiestaSimple fs = new FiestaSimple();
-        fs.creator = user.getEmail();
-        fs.creationDate = System.currentTimeMillis();
-        fs.name = etEvento.getText().toString();
-        listReference.child(user.getEmail().split("@")[0] + ((int) (Math.random() * 9999))).setValue(fs);
-        startActivity(new Intent(getApplicationContext(), MisFiestas.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        finish();
     }
 
 
@@ -84,13 +92,19 @@ public void addImage(View v){
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == RESULT_OK) {
             try {
-
+                System.out.println(data.getData());
                Bitmap bitmapGaleria = BitmapFactory.decodeStream(getContentResolver().openInputStream(data.getData()));
                 int alto = bitmapGaleria.getHeight();
                 int ancho = bitmapGaleria.getWidth();
                 Bitmap imagenProcesada= resizeImage(bitmapGaleria, 360, proporcionY(360, ancho, alto));
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                imagenProcesada.compress(Bitmap.CompressFormat.JPEG, 1,stream);
                 BitmapDrawable imagen = new BitmapDrawable(getResources(), imagenProcesada);
+
                 iv_logo.setBackground(imagen);
+
+                ubicacionImage=data.getData();
+                subirImg(ubicacionImage);
 
             } catch (FileNotFoundException e) {
                 // TODO Auto-generated catch block
@@ -101,7 +115,34 @@ public void addImage(View v){
     }
 
 
+public void subirImg(Uri uri){
+    Uri file = uri;
+    StorageReference riversRef = mStorageRef.child("images/rivers.jpg");
 
+    riversRef.putFile(file)
+            .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                    // Get a URL to the uploaded content
+                    Uri downloadUrl = taskSnapshot.getDownloadUrl();
+                    ubicacionImageFirebase=downloadUrl;
+                    FiestaSimple fs = new FiestaSimple();
+                    fs.creator = user.getEmail();
+                    fs.creationDate = System.currentTimeMillis();
+                    fs.name = etEvento.getText().toString();
+                    listReference.child(user.getEmail().split("@")[0] + ((int) (Math.random() * 9999))).setValue(fs);
+                    startActivity(new Intent(getApplicationContext(), MisFiestas.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                    finish();                }
+            })
+            .addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception exception) {
+                    // Handle unsuccessful uploads
+                    // ...
+                    Toast.makeText(getApplicationContext(),"No se pudo crear la fiesta",Toast.LENGTH_SHORT).show();
+                }
+            });
+}
 
 
     public static Bitmap resizeImage(Bitmap resId, int w, int h) {
@@ -111,19 +152,14 @@ public void addImage(View v){
         int height = BitmapOrg.getHeight();
         int newWidth = w;
         int newHeight = h;
-        // calculamos el escalado de la imagen destino
         float scaleWidth = ((float) newWidth) / width;
         float scaleHeight = ((float) newHeight) / height;
-        // para poder manipular la imagen
-        // debemos crear una matriz
+
         Matrix matrix = new Matrix();
-        // resize the Bitmap
         matrix.postScale(scaleWidth, scaleHeight);
-        // volvemos a crear la imagen con los nuevos valores
         Bitmap resizedBitmap = Bitmap.createBitmap(BitmapOrg, 0, 0,
                 width, height, matrix, true);
-        // si queremos poder mostrar nuestra imagen tenemos que crear un
-        // objeto drawable y así asignarlo a un botón, imageview...
+
         return resizedBitmap;
 
     }

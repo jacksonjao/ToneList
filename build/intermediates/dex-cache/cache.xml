@@ -57,6 +57,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="159494eb362396d073d8c922b77e40c0da5fc5bc">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.6.1_9231158c8f2c94028d5c122a4fc7a9003ae0d143/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -261,6 +270,15 @@
         revision="24.0.1"
         sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
         <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_001b445ba80cf257f9356dc798299c0fd97484ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8c6ef5bd4072f8cda2b89d8356ea7d8acd0683aa">
+        <dex dex="/Volumes/Documentos/Yon/appsAndroid/ToneList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.6.1_b3ed28a668448873430e0767496ff9f3b0a14d07/classes.dex" />
     </item>
     <item
         is-multidex="true"
