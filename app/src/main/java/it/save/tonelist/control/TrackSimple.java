@@ -15,9 +15,14 @@ public class TrackSimple {
     protected String artist;
     protected String album;
     protected String imgURL;
+
+    @Exclude
     protected Bitmap image;
     @Exclude
     protected boolean liked;
+
+    @Exclude
+    protected long likes;
 
     public TrackSimple() {
     }
@@ -30,5 +35,10 @@ public class TrackSimple {
         this.imgURL = imgURL;
         this.liked = liked;
         this.image = image;
+        this.likes = 0;
+    }
+
+    public void cargarImagen() {
+        new DownloadImageTask(this).execute(this.imgURL);
     }
 }

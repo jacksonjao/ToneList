@@ -36,7 +36,7 @@ public class Fiesta extends AppCompatActivity {
 
 
     public void cancionesVotadas(View v){
-        startActivity(new Intent(getApplicationContext(), VerVotadas.class));
+        startActivity(new Intent(getApplicationContext(), VerVotadas.class).putExtra("code", getIntent().getStringExtra("code")));
 
     }
 

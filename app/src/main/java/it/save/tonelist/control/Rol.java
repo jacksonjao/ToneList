@@ -2,10 +2,9 @@ package it.save.tonelist.control;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Toast;
 
 import it.save.tonelist.R;
 
@@ -24,6 +23,6 @@ public class Rol extends AppCompatActivity {
     }
 
     public void espectador(View v){
-        startActivity(new Intent(getApplicationContext(),ListaPrincipal.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        startActivity(new Intent(getApplicationContext(), LeerQr.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
     }
 }
