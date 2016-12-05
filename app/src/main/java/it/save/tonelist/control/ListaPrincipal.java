@@ -34,7 +34,7 @@ import kaaes.spotify.webapi.android.models.Track;
 import kaaes.spotify.webapi.android.models.TracksPager;
 import retrofit.client.Response;
 
-public class ListaPrincipal extends AppCompatActivity implements SearchView.OnQueryTextListener {
+public class ListaPrincipal extends AppCompatActivity {
     TextView tv_listaPrincipal;
     ImageButton btn_menu;
     SearchView searchView;
@@ -52,10 +52,7 @@ public class ListaPrincipal extends AppCompatActivity implements SearchView.OnQu
         setContentView(R.layout.activity_lista_principal);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        searchView = (SearchView) findViewById(R.id.sv_buscar);
-        int searchBarId = searchView.getContext().getResources().getIdentifier("android:id/search_bar", null, null);
-        final LinearLayout searchBar = (LinearLayout) searchView.findViewById(searchBarId);
-        searchBar.setLayoutTransition(new LayoutTransition());
+
         btn_menu = (ImageButton) findViewById(R.id.bnt_menu);
         tv_listaPrincipal = (TextView) findViewById(R.id.tv_listaPrincipal);
         //controlo el menu desplegable
@@ -63,7 +60,7 @@ public class ListaPrincipal extends AppCompatActivity implements SearchView.OnQu
         drawerLayout = (DrawerLayout) findViewById(R.id.activity_lista);
         drawerLayout.setScrimColor(Color.argb(230,0,0,0));
         recyclerView = (RecyclerView) findViewById(R.id.rv_lista);
-        search();
+
 
         //Busqueda en spotify
         trackList = new ArrayList<>();
@@ -71,7 +68,7 @@ public class ListaPrincipal extends AppCompatActivity implements SearchView.OnQu
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(itemAdapter);
         api = new SpotifyApi();
-        searchView.setOnQueryTextListener(this);
+
         validarMenu();
     }
 
@@ -85,61 +82,11 @@ public class ListaPrincipal extends AppCompatActivity implements SearchView.OnQu
 
 
 
-    public void search() {
-        searchView.setOnSearchClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Animation animation = AnimationUtils.makeOutAnimation(ListaPrincipal.this, false);
-                tv_listaPrincipal.setAnimation(animation);
-                tv_listaPrincipal.setVisibility(View.INVISIBLE);
-                btn_menu.setAnimation(animation);
-                btn_menu.setVisibility(View.INVISIBLE);
-            }
-        });
-        searchView.setOnCloseListener(new SearchView.OnCloseListener() {
-            @Override
-            public boolean onClose() {
-                Animation animation = AnimationUtils.makeInAnimation(ListaPrincipal.this, true);
-                tv_listaPrincipal.setAnimation(animation);
-                tv_listaPrincipal.setVisibility(View.VISIBLE);
-                btn_menu.setAnimation(animation);
-                btn_menu.setVisibility(View.VISIBLE);
-                return false;
-            }
-        });
-    }
 
 
-    @Override
-    public boolean onQueryTextSubmit(String s) {
-        SpotifyService spotify = api.getService();
-        Map<String, Object> options = new HashMap<>();
-        options.put(SpotifyService.OFFSET, 0);
-        options.put(SpotifyService.LIMIT, 20);
 
-        spotify.searchTracks(s, options, new SpotifyCallback<TracksPager>() {
-            @Override
-            public void failure(SpotifyError spotifyError) {
-                Log.e("SpotifyErr", spotifyError.getMessage());
-            }
 
-            @Override
-            public void success(TracksPager tracksPager, Response response) {
-                trackList.clear();
-                trackList.addAll(convertToSimple(tracksPager.tracks.items));
-                itemAdapter.notifyDataSetChanged();
-                showItems();
-            }
-        });
 
-        return false;
-    }
-
-    @Override
-    public boolean onQueryTextChange(String s) {
-        Log.d("OnQueryText", s);
-        return false;
-    }
 
     public List<TrackSimple> convertToSimple(List<Track> tracks) {
         List<TrackSimple> tsList = new ArrayList<>();
