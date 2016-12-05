@@ -46,6 +46,9 @@
     <string name="canciones_votadas">Canciones votadas</string>
     <string name="canciones_recomendadas_dj">Canciones recomendadas</string>
     <string name="modificar_lista">Modificar lista</string>
+    <string name="anadir_fiesta">Añadir fiesta</string>
+    <string name="aceptar">Aceptar</string>
 
+    <string name="cancelra">Cancelar</string>
 
 </resources>

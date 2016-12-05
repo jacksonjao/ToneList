@@ -46,8 +46,11 @@
             android:fontFamily="@string/font_family_regular"
             android:hint="@string/correo_electronico"
             android:textAllCaps="false"
+            android:inputType="textEmailAddress"
+            android:lines="1"
             android:textColor="@color/colorAccent"
-            android:textColorHint="@color/colorAccent"            android:textSize="@dimen/medium" />
+            android:textColorHint="@color/colorAccent"
+            android:textSize="@dimen/medium" />
 
         <EditText
             android:id="@+id/et_contrasena"
@@ -58,9 +61,12 @@
             android:layout_margin="5dp"
             android:fontFamily="@string/font_family_regular"
             android:hint="@string/contrasena"
+            android:inputType="textPassword"
+            android:lines="1"
             android:textAllCaps="false"
             android:textColor="@color/colorAccent"
-            android:textColorHint="@color/colorAccent"            android:textSize="@dimen/medium" />
+            android:textColorHint="@color/colorAccent"
+            android:textSize="@dimen/medium" />
 
         <EditText
             android:id="@+id/et_confirmar_contrasena"
@@ -71,9 +77,12 @@
             android:layout_margin="5dp"
             android:fontFamily="@string/font_family_regular"
             android:hint="@string/confirmar_contrasena"
+            android:lines="1"
+            android:inputType="textPassword"
             android:textAllCaps="false"
             android:textColor="@color/colorAccent"
-            android:textColorHint="@color/colorAccent"            android:textSize="@dimen/medium" />
+            android:textColorHint="@color/colorAccent"
+            android:textSize="@dimen/medium" />
 
 
         <Button

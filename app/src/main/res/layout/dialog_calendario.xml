@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:layout_centerHorizontal="true">
+
+
+    <DatePicker
+        android:id="@+id/cv_calendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarTextColor="@color/colorWhite"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:headerBackground="@color/colorPrimary"
+        android:startYear="1990"
+        android:datePickerMode="calendar"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btn_aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/cv_calendario"
+        android:background="@color/colorTransparent"
+        android:text="@string/aceptar"
+
+        android:textAllCaps="false"
+        android:fontFamily="@string/font_family_medium"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/medium"
+
+        />
+
+    <Button
+        android:id="@+id/btn_cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv_calendario"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/btn_aceptar"
+        android:background="@color/colorTransparent"
+        android:text="@string/cancelra"
+        android:textAllCaps="false"
+        android:fontFamily="@string/font_family_medium"
+        android:textColor="@color/colorWhite"
+android:textSize="@dimen/medium"
+        />
+
+</RelativeLayout>

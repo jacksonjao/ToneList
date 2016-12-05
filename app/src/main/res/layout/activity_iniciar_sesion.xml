@@ -46,6 +46,8 @@
             android:fontFamily="@string/font_family_regular"
             android:hint="@string/correo_electronico"
             android:textAllCaps="false"
+            android:lines="1"
+            android:inputType="textEmailAddress"
             android:textColor="@color/colorAccent"
             android:textColorHint="@color/colorAccent"            android:textSize="@dimen/medium" />
 
@@ -57,6 +59,8 @@
             android:layout_below="@+id/et_correo"
             android:layout_centerHorizontal="true"
             android:layout_margin="10dp"
+            android:lines="1"
+
             android:fontFamily="@string/font_family_regular"
             android:hint="@string/contrasena"
             android:textAllCaps="false"

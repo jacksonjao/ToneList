@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_lista"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+        <include layout="@layout/dj_bar_menu" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            >
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorWhite"
+                android:padding="5dp"
+                >
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/icon_pic_fondo" />
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/et_evento"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@string/font_family_regular"
+                android:hint="@string/evento"
+                android:textAllCaps="false"
+                android:lines="1"
+                android:inputType="text"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="@dimen/medium" />
+
+            <EditText
+                android:id="@+id/et_direccion"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_evento"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:fontFamily="@string/font_family_regular"
+                android:hint="@string/direccion"
+                android:textAllCaps="false"
+                android:lines="1"
+                android:inputType="textNoSuggestions"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="@dimen/medium" />
+
+            <EditText
+                android:id="@+id/et_fecha"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_direccion"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:fontFamily="@string/font_family_regular"
+                android:hint="@string/fecha"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="@dimen/medium"
+                android:inputType="date"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:onClick="calendario"
+                />
+
+
+            <Button
+                android:id="@+id/btn_anadir"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/et_fecha"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/botones_principales"
+                android:fontFamily="@string/font_family_regular"
+                android:onClick="anadirFiesta"
+                android:text="@string/anadir_fiesta"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/medium"
+
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/dl_menu"
+        layout="@layout/dj_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left" />
+
+
+
+</android.support.v4.widget.DrawerLayout>
