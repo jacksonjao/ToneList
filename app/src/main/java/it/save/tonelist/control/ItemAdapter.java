@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 import java.util.List;
 
@@ -23,24 +24,6 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         this.trackList = trackList;
     }
 
-
-
-    public class ItemViewHolder extends RecyclerView.ViewHolder {
-
-        protected TextView vName;
-        protected TextView vArtirst;
-        protected TextView vAlbum;
-        protected ImageView image;
-
-        public ItemViewHolder(View itemView) {
-            super(itemView);
-            vName = (TextView) itemView.findViewById(R.id.tv_cancion);
-            vArtirst = (TextView) itemView.findViewById(R.id.tv_artista);
-            vAlbum = (TextView) itemView.findViewById(R.id.tv_album);
-            image = (ImageView) itemView.findViewById(R.id.im_cover);
-        }
-    }
-
     @Override
     public ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_lista_like, parent, false);
@@ -54,11 +37,34 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         holder.vArtirst.setText(ts.artist);
         holder.vAlbum.setText(ts.album);
         new DownloadImageTask(holder.image).execute(ts.imgURL);
+        holder.bLike.setChecked(false);
     }
 
     @Override
     public int getItemCount() {
         return trackList.size();
     }
+
+
+
+    public class ItemViewHolder extends RecyclerView.ViewHolder {
+
+        protected TextView vName;
+        protected TextView vArtirst;
+        protected TextView vAlbum;
+        protected ImageView image;
+        protected ToggleButton bLike;
+
+        public ItemViewHolder(View itemView) {
+            super(itemView);
+            vName = (TextView) itemView.findViewById(R.id.tv_cancion);
+            vArtirst = (TextView) itemView.findViewById(R.id.tv_artista);
+            vAlbum = (TextView) itemView.findViewById(R.id.tv_album);
+            image = (ImageView) itemView.findViewById(R.id.im_cover);
+            bLike = (ToggleButton) itemView.findViewById(R.id.tb_like);
+        }
+    }
+
+
 
 }

@@ -178,6 +178,7 @@ public class RecomendarCanciones extends AppCompatActivity implements SearchView
         TrackSimple temp;
         for (Track t : tracks) {
             temp = new TrackSimple();
+            temp.trackId = t.id;
             temp.name = t.name;
             temp.album = t.album.name;
             temp.artist = t.artists.get(0).name;
@@ -189,7 +190,7 @@ public class RecomendarCanciones extends AppCompatActivity implements SearchView
 
     private void showItems() {
         for (TrackSimple t : trackList) {
-            System.out.println(t.name + "-" + t.album + "-" + t.imgURL);
+            System.out.println(t.trackId+" - "+t.name + " - " + t.album + " - " + t.imgURL);
         }
     }
 }

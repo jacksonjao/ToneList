@@ -5,6 +5,7 @@ package it.save.tonelist.control;
  */
 
 public class TrackSimple {
+    protected String trackId;
     protected String name;
     protected String artist;
     protected String album;

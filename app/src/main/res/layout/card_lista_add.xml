@@ -80,13 +80,12 @@
 
 
             <ToggleButton
-                android:id="@+id/tb_like"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/like_dislike"
+                android:background="@drawable/add_disadd"
                 android:textOff=""
                 android:textOn="" />
 
