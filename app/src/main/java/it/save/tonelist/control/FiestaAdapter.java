@@ -66,7 +66,10 @@ public class FiestaAdapter extends RecyclerView.Adapter<FiestaAdapter.FiestaView
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    view.getContext().startActivity(new Intent(view.getContext(), Fiesta.class).putExtra("name", evento.getText().toString()));
+                    Intent intent = new Intent(view.getContext(), Fiesta.class);
+                    intent.putExtra("name", evento.getText().toString());
+                    intent.putExtra("code", codigo.getText().toString());
+                    view.getContext().startActivity(intent);
                 }
             });
         }

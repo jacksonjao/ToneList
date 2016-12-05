@@ -1,6 +1,7 @@
 package it.save.tonelist.control;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,12 +22,18 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
     public static final int LIKE = 0;
     public static final int PLUS = 1;
 
+
     private List<TrackSimple> trackList;
     private int tipo;
+    private String codigoFiesta;
+    private SubirFirebase firebase;
 
-    public ItemAdapter(List<TrackSimple> trackList, int tipo) {
+    public ItemAdapter(List<TrackSimple> trackList, int tipo, String codigoFiesta) {
         this.trackList = trackList;
         this.tipo = tipo;
+        this.codigoFiesta = codigoFiesta;
+        this.firebase = new SubirFirebase();
+
     }
 
     @Override
@@ -53,6 +60,10 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
             public void onClick(View view) {
                 ToggleButton btn = (ToggleButton) view;
                 ts.liked = btn.isChecked();
+                if (btn.isChecked()) {
+                    Log.d("firebaseAdd", "Inicio de agregar de firebase");
+                    firebase.addCancion(codigoFiesta, ts);
+                }
             }
         });
 

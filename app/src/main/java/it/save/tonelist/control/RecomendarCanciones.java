@@ -65,7 +65,7 @@ public class RecomendarCanciones extends AppCompatActivity implements SearchView
 
         recyclerView = (RecyclerView) findViewById(R.id.rv_lista);
         trackList = new ArrayList<>();
-        itemAdapter = new ItemAdapter(trackList, ItemAdapter.PLUS);
+        itemAdapter = new ItemAdapter(trackList, ItemAdapter.PLUS, "00000");
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(itemAdapter);
         api = new SpotifyApi();

@@ -1,6 +1,5 @@
 package it.save.tonelist.control;
 
-import android.animation.LayoutTransition;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
@@ -10,29 +9,18 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.SearchView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import it.save.tonelist.R;
 import kaaes.spotify.webapi.android.SpotifyApi;
-import kaaes.spotify.webapi.android.SpotifyCallback;
-import kaaes.spotify.webapi.android.SpotifyError;
-import kaaes.spotify.webapi.android.SpotifyService;
 import kaaes.spotify.webapi.android.models.Track;
-import kaaes.spotify.webapi.android.models.TracksPager;
-import retrofit.client.Response;
 
 public class ListaPrincipal extends AppCompatActivity {
     TextView tv_listaPrincipal;
@@ -64,7 +52,7 @@ public class ListaPrincipal extends AppCompatActivity {
 
         //Busqueda en spotify
         trackList = new ArrayList<>();
-        itemAdapter = new ItemAdapter(trackList, ItemAdapter.LIKE);
+        itemAdapter = new ItemAdapter(trackList, ItemAdapter.LIKE, "00000");
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(itemAdapter);
         api = new SpotifyApi();

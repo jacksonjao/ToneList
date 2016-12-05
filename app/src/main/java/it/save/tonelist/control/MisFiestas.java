@@ -87,9 +87,9 @@ public class MisFiestas extends AppCompatActivity {
                 for (DataSnapshot child : dataSnapshot.getChildren()) {
                     FiestaSimple temp = child.getValue(FiestaSimple.class);
                     temp.code = child.getKey();
-                    Log.d("cargarCanciones", temp.name);
-                    Log.d("cargarCanciones", temp.creationDate + "");
-                    Log.d("cargarCanciones", temp.songs.size() + "");
+                    Log.d("cargarListas", temp.name);
+                    Log.d("cargarListas", temp.creationDate + "");
+                    Log.d("cargarListas", temp.songs.size() + "");
                     fiestas.add(temp);
 
 

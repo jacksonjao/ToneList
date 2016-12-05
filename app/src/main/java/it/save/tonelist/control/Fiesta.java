@@ -49,7 +49,7 @@ public class Fiesta extends AppCompatActivity {
 
 
     public void modificarLista(View v){
-        startActivity(new Intent(getApplicationContext(), EditarLista.class));
+        startActivity(new Intent(getApplicationContext(), EditarLista.class).putExtra("code", getIntent().getStringExtra("code")));
     }
 
     public void menu(View v) {
