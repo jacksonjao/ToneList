@@ -183,6 +183,7 @@ public class RecomendarCanciones extends AppCompatActivity implements SearchView
             temp.album = t.album.name;
             temp.artist = t.artists.get(0).name;
             temp.imgURL = t.album.images.get(0).url;
+            temp.liked = false;
             tsList.add(temp);
         }
         return tsList;

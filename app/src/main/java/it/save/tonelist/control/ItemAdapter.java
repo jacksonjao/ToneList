@@ -31,13 +31,24 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
     }
 
     @Override
-    public void onBindViewHolder(ItemViewHolder holder, int i) {
-        TrackSimple ts = trackList.get(i);
+    public void onBindViewHolder(ItemViewHolder holder, final int i) {
+        final TrackSimple ts = trackList.get(i);
         holder.vName.setText(ts.name);
         holder.vArtirst.setText(ts.artist);
         holder.vAlbum.setText(ts.album);
         new DownloadImageTask(holder.image).execute(ts.imgURL);
-        holder.bLike.setChecked(false);
+        holder.bLike.setChecked(ts.liked);
+
+        holder.bLike.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ToggleButton btn = (ToggleButton) view;
+                ts.liked = btn.isChecked();
+            }
+        });
+
+
+
     }
 
     @Override
