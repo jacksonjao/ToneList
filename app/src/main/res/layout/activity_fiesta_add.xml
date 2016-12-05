@@ -33,7 +33,9 @@
                     android:layout_height="200dp"
 
                     android:layout_centerHorizontal="true"
-                    android:background="@drawable/icon_pic_fondo" />
+                    android:background="@drawable/icon_pic_fondo"
+                    android:onClick="addImage"
+                    />
             </RelativeLayout>
 
 
