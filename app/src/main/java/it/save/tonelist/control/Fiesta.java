@@ -33,11 +33,29 @@ public class Fiesta extends AppCompatActivity {
         validarMenu();
     }
 
+
+
+    public void cancionesVotadas(View v){
+        startActivity(new Intent(getApplicationContext(), VerVotadas.class));
+
+    }
+
+    public void cancionesRecomendadas(View v){
+        startActivity(new Intent(getApplicationContext(), VerRecomendadas.class));
+
+    }
+
+
+
+
+    public void modificarLista(View v){
+        startActivity(new Intent(getApplicationContext(), EditarLista.class));
+    }
+
     public void menu(View v) {
         drawerLayout.openDrawer(menu);
 
     }
-
 
     public void validarMenu(){
         tv_listaPrincipal.setText(getIntent().getStringExtra("name"));
@@ -53,17 +71,24 @@ public class Fiesta extends AppCompatActivity {
 
 
     public void salir(View v) {
-        startActivity(new Intent(getApplicationContext(), LeerQr.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        finish();
+        startActivity(new Intent(getApplicationContext(), LeerQr.class));
+
     }
 
     public void cerrarSesion(View v) {
-        startActivity(new Intent(getApplicationContext(), Login.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        finish();
+        startActivity(new Intent(getApplicationContext(), Login.class));
+
     }
 
     public void cambiarRol(View v) {
-        startActivity(new Intent(getApplicationContext(), Rol.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        startActivity(new Intent(getApplicationContext(), Rol.class));
+
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(getApplicationContext(), MisFiestas.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         finish();
     }
 

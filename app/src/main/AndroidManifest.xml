@@ -27,7 +27,10 @@
         <activity android:name=".control.CancionesRecomendadas" />
         <activity android:name=".control.MisFiestas" />
         <activity android:name=".control.Fiesta" />
-        <activity android:name=".control.FiestaAdd"></activity>
+        <activity android:name=".control.FiestaAdd" />
+        <activity android:name=".control.EditarLista" />
+        <activity android:name=".control.VerVotadas" />
+        <activity android:name=".control.VerRecomendadas"></activity>
     </application>
 
 </manifest>

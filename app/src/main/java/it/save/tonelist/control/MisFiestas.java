@@ -110,8 +110,8 @@ public class MisFiestas extends AppCompatActivity {
 
 
     public void addFiesta(View v){
-        startActivity(new Intent(getApplicationContext(), FiestaAdd.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        finish();
+        startActivity(new Intent(getApplicationContext(), FiestaAdd.class));
+
     }
 
 
@@ -119,10 +119,7 @@ public class MisFiestas extends AppCompatActivity {
         drawerLayout.openDrawer(menu);
     }
 
-    public void carta(View v){
-        startActivity(new Intent(getApplicationContext(), Fiesta.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        finish();
-    }
+
 
     public void validarMenu(){
         tv_listaPrincipal.setText(getResources().getString(R.string.recomendar_canciones));
@@ -149,4 +146,7 @@ public class MisFiestas extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), Rol.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         finish();
     }
+
+
+
 }
