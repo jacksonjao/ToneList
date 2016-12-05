@@ -65,7 +65,7 @@ public class RecomendarCanciones extends AppCompatActivity implements SearchView
 
         recyclerView = (RecyclerView) findViewById(R.id.rv_lista);
         trackList = new ArrayList<>();
-        itemAdapter = new ItemAdapter(trackList);
+        itemAdapter = new ItemAdapter(trackList, ItemAdapter.PLUS);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(itemAdapter);
         api = new SpotifyApi();
@@ -184,6 +184,7 @@ public class RecomendarCanciones extends AppCompatActivity implements SearchView
             temp.artist = t.artists.get(0).name;
             temp.imgURL = t.album.images.get(0).url;
             temp.liked = false;
+            new DownloadImageTask(temp).execute(temp.imgURL);
             tsList.add(temp);
         }
         return tsList;

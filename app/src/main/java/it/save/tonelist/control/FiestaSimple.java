@@ -1,5 +1,7 @@
 package it.save.tonelist.control;
 
+import android.graphics.Bitmap;
+
 import com.google.firebase.database.IgnoreExtraProperties;
 
 /**
@@ -8,8 +10,10 @@ import com.google.firebase.database.IgnoreExtraProperties;
 @IgnoreExtraProperties
 public class FiestaSimple {
 
-    public long creationDate;
-    public String creator;
-    public String name;
+    protected long creationDate;
+    protected String creator;
+    protected String name;
+    protected Bitmap img;
+    protected String code;
 
 }

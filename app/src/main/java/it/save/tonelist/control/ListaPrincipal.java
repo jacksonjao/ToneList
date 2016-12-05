@@ -67,7 +67,7 @@ public class ListaPrincipal extends AppCompatActivity implements SearchView.OnQu
 
         //Busqueda en spotify
         trackList = new ArrayList<>();
-        itemAdapter = new ItemAdapter(trackList);
+        itemAdapter = new ItemAdapter(trackList, ItemAdapter.LIKE);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(itemAdapter);
         api = new SpotifyApi();

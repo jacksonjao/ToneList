@@ -18,15 +18,24 @@ import it.save.tonelist.R;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder> {
 
-    private List<TrackSimple> trackList;
+    public static final int LIKE = 0;
+    public static final int PLUS = 1;
 
-    public ItemAdapter(List<TrackSimple> trackList) {
+    private List<TrackSimple> trackList;
+    private int tipo;
+
+    public ItemAdapter(List<TrackSimple> trackList, int tipo) {
         this.trackList = trackList;
+        this.tipo = tipo;
     }
 
     @Override
     public ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_lista_like, parent, false);
+        View itemView = null;
+        if (tipo == LIKE)
+            itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_lista_like, parent, false);
+        else
+            itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_lista_add, parent, false);
         return new ItemViewHolder(itemView);
     }
 
@@ -36,7 +45,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         holder.vName.setText(ts.name);
         holder.vArtirst.setText(ts.artist);
         holder.vAlbum.setText(ts.album);
-        new DownloadImageTask(holder.image).execute(ts.imgURL);
+        holder.image.setImageBitmap(ts.image);
         holder.bLike.setChecked(ts.liked);
 
         holder.bLike.setOnClickListener(new View.OnClickListener() {
