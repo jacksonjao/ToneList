@@ -109,6 +109,11 @@ public class MisFiestas extends AppCompatActivity {
     }
 
 
+    public void addFiesta(View v){
+        startActivity(new Intent(getApplicationContext(), FiestaAdd.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        finish();
+    }
+
 
     public void menu(View v) {
         drawerLayout.openDrawer(menu);

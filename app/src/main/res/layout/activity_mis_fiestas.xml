@@ -12,8 +12,24 @@
         android:background="@drawable/background">
         <include layout="@layout/dj_bar_menu" />
         <include layout="@layout/dj_contenido_lista" />
+
     </LinearLayout>
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+android:background="@drawable/button_float"
+            android:elevation="4dp"
+            android:layout_alignParentBottom="true"
+android:layout_alignParentRight="true"
+            android:layout_margin="30dp"
+            android:onClick="addFiesta"
+            />
+
+    </RelativeLayout>
 
     <include
         android:id="@+id/dl_menu"
@@ -21,5 +37,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="left" />
+
+
+
 
 </android.support.v4.widget.DrawerLayout>

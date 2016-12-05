@@ -17,7 +17,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
             >
             <RelativeLayout
                 android:id="@+id/rl"
@@ -69,33 +69,14 @@
                 android:textColorHint="@color/colorAccent"
                 android:textSize="@dimen/medium" />
 
-            <EditText
-                android:id="@+id/et_fecha"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/et_direccion"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="5dp"
-                android:fontFamily="@string/font_family_regular"
-                android:hint="@string/fecha"
-                android:textAllCaps="false"
-                android:textColor="@color/colorAccent"
-                android:textColorHint="@color/colorAccent"
-                android:textSize="@dimen/medium"
-                android:inputType="date"
-                android:clickable="false"
-                android:cursorVisible="false"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:onClick="calendario"
-                />
+
 
 
             <Button
                 android:id="@+id/btn_anadir"
                 android:layout_width="250dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/et_fecha"
+                android:layout_below="@+id/et_direccion"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="10dp"
                 android:background="@drawable/botones_principales"
