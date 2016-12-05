@@ -70,7 +70,6 @@ public class MisFiestas extends AppCompatActivity {
 
     public void cargarUsuario() {
 
-
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
         user = mAuth.getCurrentUser();
         if (user != null) {
@@ -90,6 +89,7 @@ public class MisFiestas extends AppCompatActivity {
                     temp.code = child.getKey();
                     Log.d("cargarCanciones", temp.name);
                     Log.d("cargarCanciones", temp.creationDate + "");
+                    Log.d("cargarCanciones", temp.songs.size() + "");
                     fiestas.add(temp);
 
 
