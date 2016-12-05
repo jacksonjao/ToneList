@@ -38,71 +38,6 @@ public class FiestaAdd extends AppCompatActivity {
     RelativeLayout menu;
     DrawerLayout drawerLayout;
     ImageView iv_logo;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fiesta_add);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        etEvento = (EditText) findViewById(R.id.et_evento);
-        etDireccion = (EditText) findViewById(R.id.et_direccion);
-        firebaseDatabase = FirebaseDatabase.getInstance();
-        listReference = firebaseDatabase.getReference().child("lists");
-        user = FirebaseAuth.getInstance().getCurrentUser();
-
-
-        //controlo el menu desplegable
-        btn_menu = (ImageButton) findViewById(R.id.bnt_menu);
-        tv_listaPrincipal = (TextView) findViewById(R.id.tv_listaPrincipal);
-        menu = (RelativeLayout) findViewById(R.id.dl_menu);
-        drawerLayout = (DrawerLayout) findViewById(R.id.activity_lista);
-        drawerLayout.setScrimColor(Color.argb(230,0,0,0));
-        iv_logo = (ImageView) findViewById(R.id.iv_logo);
-        validarMenu();
-    }
-
-
-    public void anadirFiesta(View view) {
-
-        FiestaSimple fs = new FiestaSimple();
-        fs.creator = user.getEmail();
-        fs.creationDate = System.currentTimeMillis();
-        fs.name = etEvento.getText().toString();
-        listReference.child(user.getEmail().split("@")[0] + ((int) (Math.random() * 9999))).setValue(fs);
-        startActivity(new Intent(getApplicationContext(), MisFiestas.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        finish();
-    }
-
-
-public void addImage(View v){
-
-    Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-    startActivityForResult(intent, 0);
-}
-
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == RESULT_OK) {
-            try {
-
-               Bitmap bitmapGaleria = BitmapFactory.decodeStream(getContentResolver().openInputStream(data.getData()));
-                int alto = bitmapGaleria.getHeight();
-                int ancho = bitmapGaleria.getWidth();
-                Bitmap imagenProcesada= resizeImage(bitmapGaleria, 360, proporcionY(360, ancho, alto));
-                BitmapDrawable imagen = new BitmapDrawable(getResources(), imagenProcesada);
-                iv_logo.setBackground(imagen);
-
-            } catch (FileNotFoundException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-
-        }
-    }
-
-
-
-
 
     public static Bitmap resizeImage(Bitmap resId, int w, int h) {
         // cargamos la imagen de origen
@@ -128,6 +63,64 @@ public void addImage(View v){
 
     }
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_fiesta_add);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        etEvento = (EditText) findViewById(R.id.et_evento);
+        etDireccion = (EditText) findViewById(R.id.et_direccion);
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        listReference = firebaseDatabase.getReference().child("lists");
+        user = FirebaseAuth.getInstance().getCurrentUser();
+
+
+        //controlo el menu desplegable
+        btn_menu = (ImageButton) findViewById(R.id.bnt_menu);
+        tv_listaPrincipal = (TextView) findViewById(R.id.tv_listaPrincipal);
+        menu = (RelativeLayout) findViewById(R.id.dl_menu);
+        drawerLayout = (DrawerLayout) findViewById(R.id.activity_lista);
+        drawerLayout.setScrimColor(Color.argb(230,0,0,0));
+        iv_logo = (ImageView) findViewById(R.id.iv_logo);
+        validarMenu();
+    }
+
+    public void anadirFiesta(View view) {
+
+        FiestaSimple fs = new FiestaSimple();
+        fs.creator = user.getEmail();
+        fs.creationDate = System.currentTimeMillis();
+        fs.name = etEvento.getText().toString();
+        listReference.child(user.getEmail().split("@")[0] + ((int) (Math.random() * 9999))).setValue(fs);
+        startActivity(new Intent(getApplicationContext(), MisFiestas.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        finish();
+    }
+
+public void addImage(View v){
+
+    Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+    startActivityForResult(intent, 0);
+}
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == RESULT_OK) {
+            try {
+
+               Bitmap bitmapGaleria = BitmapFactory.decodeStream(getContentResolver().openInputStream(data.getData()));
+                int alto = bitmapGaleria.getHeight();
+                int ancho = bitmapGaleria.getWidth();
+                Bitmap imagenProcesada= resizeImage(bitmapGaleria, 360, proporcionY(360, ancho, alto));
+                BitmapDrawable imagen = new BitmapDrawable(getResources(), imagenProcesada);
+                iv_logo.setBackground(imagen);
+
+            } catch (FileNotFoundException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+
+        }
+    }
 
     public int proporcionY(int scale, int w, int h) {
         int redimension = 0;

@@ -168,6 +168,7 @@ public class ListaPrincipal extends AppCompatActivity {
                         TrackSimple ts = tracksHash.get(child.getKey());
                         long likes = ts.likes;
                         ts = child.getValue(TrackSimple.class);
+                        ts.trackId = child.getKey();
                         ts.likes = likes;
                         Log.d("cargaImagen", ts.name + " " + ts.imgURL);
                         ts.cargarImagen();

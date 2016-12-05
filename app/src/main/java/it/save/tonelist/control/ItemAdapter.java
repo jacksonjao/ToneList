@@ -55,17 +55,33 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         holder.image.setImageBitmap(ts.image);
         holder.bLike.setChecked(ts.liked);
 
-        holder.bLike.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ToggleButton btn = (ToggleButton) view;
-                ts.liked = btn.isChecked();
-                if (btn.isChecked()) {
-                    Log.d("firebaseAdd", "Inicio de agregar de firebase");
-                    firebase.addCancion(codigoFiesta, ts);
+        if (tipo == LIKE) {
+            holder.bLike.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ToggleButton btn = (ToggleButton) view;
+                    ts.liked = btn.isChecked();
+                    if (btn.isChecked()) {
+                        Log.d("firebaseVote", "Inicio de voto de firebase");
+                        firebase.addVoto(codigoFiesta, ts.trackId);
+                    }
                 }
-            }
-        });
+            });
+
+        } else {
+            holder.bLike.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ToggleButton btn = (ToggleButton) view;
+                    ts.liked = btn.isChecked();
+                    if (btn.isChecked()) {
+                        Log.d("firebaseAdd", "Inicio de agregar de firebase");
+                        firebase.addCancion(codigoFiesta, ts);
+                    }
+                }
+            });
+
+        }
 
 
 

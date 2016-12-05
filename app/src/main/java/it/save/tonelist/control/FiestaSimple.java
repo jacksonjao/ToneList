@@ -22,7 +22,7 @@ public class FiestaSimple {
     @Exclude
     protected String code;
 
-
+    @Exclude
     protected HashMap<String, Integer> songs = new HashMap<>();
 
     public FiestaSimple() {
