@@ -19,7 +19,6 @@ import it.save.tonelist.R;
 
 public class Registrarse extends AppCompatActivity {
     private FirebaseAuth mAuth;
-    private FirebaseAuth.AuthStateListener mAuthListener;
     EditText et_usuario;
     EditText et_contrasena;
     EditText et_confirmar_contrasena;
@@ -36,40 +35,27 @@ public class Registrarse extends AppCompatActivity {
     }
 
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        mAuth.addAuthStateListener(mAuthListener);
-    }
-
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        if (mAuthListener != null) {
-            mAuth.removeAuthStateListener(mAuthListener);
-        }
-    }
 
     public void registrarse(View v){
-        mAuth.createUserWithEmailAndPassword(et_usuario.getText().toString(), et_contrasena.getText().toString())
+        System.out.println(et_usuario.getText().toString()+" y "+et_contrasena.getText().toString());
+
+        mAuth.createUserWithEmailAndPassword("jacksonjao@icloud.com","Jaocksonjao1.")
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.d("onComplete", "createUserWithEmail:onComplete:" + task.isSuccessful());
+
                         // If sign in fails, display a message to the user. If sign in succeeds
                         // the auth state listener will be notified and logic to handle the
                         // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
-                            Toast.makeText(getApplicationContext(), "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
-                        }else{
-                            Toast.makeText(getApplicationContext(), "Te has registrado satisfactoriamente",
+                            Toast.makeText(getApplicationContext(), "failed",
                                     Toast.LENGTH_SHORT).show();
                         }
 
                         // ...
                     }
                 });
+
     }
 }
