@@ -34,6 +34,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.URI;
+import java.util.Calendar;
 
 import it.save.tonelist.R;
 
@@ -97,14 +98,9 @@ public void addImage(View v){
                 int alto = bitmapGaleria.getHeight();
                 int ancho = bitmapGaleria.getWidth();
                 Bitmap imagenProcesada= resizeImage(bitmapGaleria, 360, proporcionY(360, ancho, alto));
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                imagenProcesada.compress(Bitmap.CompressFormat.JPEG, 1,stream);
                 BitmapDrawable imagen = new BitmapDrawable(getResources(), imagenProcesada);
-
-                iv_logo.setBackground(imagen);
-
                 ubicacionImage=data.getData();
-                subirImg(ubicacionImage);
+                iv_logo.setBackground(imagen);
 
             } catch (FileNotFoundException e) {
                 // TODO Auto-generated catch block
@@ -117,7 +113,7 @@ public void addImage(View v){
 
 public void subirImg(Uri uri){
     Uri file = uri;
-    StorageReference riversRef = mStorageRef.child("images/rivers.jpg");
+    StorageReference riversRef = mStorageRef.child("images/"+ Calendar.getInstance().getTime()+"jpg");
 
     riversRef.putFile(file)
             .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
