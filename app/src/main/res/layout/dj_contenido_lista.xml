@@ -5,48 +5,6 @@
     android:background="@drawable/background_listas"
     android:orientation="vertical">
 
-
-    <include
-
-        layout="@layout/card_lista_fiesta"
-
-        />
-
-    <include
-
-        layout="@layout/card_lista_fiesta"
-
-        />
-
-    <include
-
-        layout="@layout/card_lista_fiesta"
-
-        />
-
-    <include
-
-        layout="@layout/card_lista_fiesta"
-
-        />
-
-    <include
-
-        layout="@layout/card_lista_fiesta"
-
-        />
-    <include
-
-        layout="@layout/card_lista_fiesta"
-
-        />
-
-    <include
-
-        layout="@layout/card_lista_fiesta"
-
-        />
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_lista"
         android:layout_width="match_parent"

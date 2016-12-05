@@ -7,6 +7,7 @@ import com.google.firebase.database.IgnoreExtraProperties;
 /**
  * Created by Andres Villegas on 2016-12-04.
  */
+
 @IgnoreExtraProperties
 public class FiestaSimple {
 
@@ -15,5 +16,9 @@ public class FiestaSimple {
     protected String name;
     protected Bitmap img;
     protected String code;
+
+    public FiestaSimple() {
+
+    }
 
 }
