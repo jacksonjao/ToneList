@@ -81,7 +81,7 @@ public class RecomendarCanciones extends AppCompatActivity implements SearchView
         SpotifyService spotify = api.getService();
         Map<String, Object> options = new HashMap<>();
         options.put(SpotifyService.OFFSET, 0);
-        options.put(SpotifyService.LIMIT, 50);
+        options.put(SpotifyService.LIMIT, 20);
 
         spotify.searchTracks(s, options, new SpotifyCallback<TracksPager>() {
             @Override

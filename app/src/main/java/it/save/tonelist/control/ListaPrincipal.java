@@ -19,7 +19,6 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.SearchView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -34,8 +33,6 @@ import kaaes.spotify.webapi.android.SpotifyService;
 import kaaes.spotify.webapi.android.models.Track;
 import kaaes.spotify.webapi.android.models.TracksPager;
 import retrofit.client.Response;
-
-import static java.security.AccessController.getContext;
 
 public class ListaPrincipal extends AppCompatActivity implements SearchView.OnQueryTextListener {
     TextView tv_listaPrincipal;
@@ -118,7 +115,7 @@ public class ListaPrincipal extends AppCompatActivity implements SearchView.OnQu
         SpotifyService spotify = api.getService();
         Map<String, Object> options = new HashMap<>();
         options.put(SpotifyService.OFFSET, 0);
-        options.put(SpotifyService.LIMIT, 50);
+        options.put(SpotifyService.LIMIT, 20);
 
         spotify.searchTracks(s, options, new SpotifyCallback<TracksPager>() {
             @Override
