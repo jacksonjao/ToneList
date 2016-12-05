@@ -19,6 +19,7 @@ import it.save.tonelist.R;
 
 public class Registrarse extends AppCompatActivity {
     private FirebaseAuth mAuth;
+    private FirebaseAuth.AuthStateListener mAuthListener;
     EditText et_usuario;
     EditText et_contrasena;
     EditText et_confirmar_contrasena;
@@ -35,11 +36,10 @@ public class Registrarse extends AppCompatActivity {
     }
 
 
-
     public void registrarse(View v){
         System.out.println(et_usuario.getText().toString()+" y "+et_contrasena.getText().toString());
 
-        mAuth.createUserWithEmailAndPassword("jacksonjao@icloud.com","Jaocksonjao1.")
+        mAuth.createUserWithEmailAndPassword("juli@icloud.com","1234567s")
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -49,7 +49,7 @@ public class Registrarse extends AppCompatActivity {
                         // the auth state listener will be notified and logic to handle the
                         // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
-                            Toast.makeText(getApplicationContext(), "failed",
+                            Toast.makeText(Registrarse.this, "failed",
                                     Toast.LENGTH_SHORT).show();
                         }
 
