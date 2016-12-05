@@ -3,6 +3,7 @@ package it.save.tonelist.control;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -15,7 +16,10 @@ import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.SearchView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -41,6 +45,7 @@ public class ListaPrincipal extends AppCompatActivity {
     FirebaseDatabase firebase = FirebaseDatabase.getInstance();
     DatabaseReference databaseReference;
 
+    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +63,14 @@ public class ListaPrincipal extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.rv_lista);
 
 
+        if (user != null) {
+            // Name, email address, and profile photo Url
+
+
+
+            System.out.println(user.getEmail());
+        }
+
         //Busqueda en spotify
         trackList = new ArrayList<>();
         itemAdapter = new ItemAdapter(trackList, ItemAdapter.LIKE, "00000");
@@ -71,7 +84,11 @@ public class ListaPrincipal extends AppCompatActivity {
 
 
     public void menu(View v) {
-        drawerLayout.openDrawer(menu);
+
+        if(!user.getEmail().toString().equals("anon@anon.com")){
+        drawerLayout.openDrawer(menu);}else{
+            Toast.makeText(getApplicationContext(),"Para mas opciones, debes registrarte",Toast.LENGTH_SHORT).show();
+        }
 
     }
 
