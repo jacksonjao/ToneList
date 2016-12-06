@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.Date;
 import java.util.List;
 
@@ -34,11 +36,12 @@ public class FiestaAdapter extends RecyclerView.Adapter<FiestaAdapter.FiestaView
     @Override
     public void onBindViewHolder(FiestaViewHolder holder, int position) {
         FiestaSimple fs = listaFiestas.get(position);
-        holder.imagen.setImageBitmap(fs.img);
+        Picasso.with(holder.itemView.getContext()).load(fs.imgUrl).into(holder.imagen);
         holder.codigo.setText(fs.code);
-        holder.direccion.setText("Avenida siempre viva 123");
+        holder.direccion.setText(fs.direccion);
         holder.fecha.setText(new Date(fs.creationDate).toString());
         holder.evento.setText(fs.name);
+        holder.url = fs.imgUrl;
 
 
     }
@@ -54,6 +57,7 @@ public class FiestaAdapter extends RecyclerView.Adapter<FiestaAdapter.FiestaView
         TextView fecha;
         TextView direccion;
         TextView codigo;
+        String url = "";
 
 
         public FiestaViewHolder(View itemView) {
@@ -69,6 +73,7 @@ public class FiestaAdapter extends RecyclerView.Adapter<FiestaAdapter.FiestaView
                     Intent intent = new Intent(view.getContext(), Fiesta.class);
                     intent.putExtra("name", evento.getText().toString());
                     intent.putExtra("code", codigo.getText().toString());
+                    intent.putExtra("url", url);
                     view.getContext().startActivity(intent);
                 }
             });

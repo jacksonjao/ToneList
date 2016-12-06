@@ -1,7 +1,5 @@
 package it.save.tonelist.control;
 
-import android.graphics.Bitmap;
-
 import com.google.firebase.database.Exclude;
 import com.google.firebase.database.IgnoreExtraProperties;
 
@@ -17,7 +15,8 @@ public class FiestaSimple {
     protected long creationDate;
     protected String creator;
     protected String name;
-    protected Bitmap img;
+    protected String imgUrl;
+    protected String direccion;
 
     @Exclude
     protected String code;

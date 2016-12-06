@@ -8,8 +8,11 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import it.save.tonelist.R;
 
@@ -18,6 +21,7 @@ public class Fiesta extends AppCompatActivity {
     ImageButton btn_menu;
     RelativeLayout menu;
     DrawerLayout drawerLayout;
+    ImageView ivLogo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,10 +30,13 @@ public class Fiesta extends AppCompatActivity {
 
         btn_menu = (ImageButton) findViewById(R.id.bnt_menu);
         tv_listaPrincipal = (TextView) findViewById(R.id.tv_listaPrincipal);
+        ivLogo = (ImageView) findViewById(R.id.iv_logo);
         //controlo el menu desplegable
         menu = (RelativeLayout) findViewById(R.id.dl_menu);
         drawerLayout = (DrawerLayout) findViewById(R.id.activity_lista);
         drawerLayout.setScrimColor(Color.argb(230,0,0,0));
+
+        Picasso.with(this).load(getIntent().getStringExtra("url")).into(ivLogo);
         validarMenu();
     }
 
