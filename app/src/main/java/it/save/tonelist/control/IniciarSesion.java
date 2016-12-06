@@ -67,6 +67,7 @@ et_usuario=(EditText)findViewById(R.id.et_correo);
 
 
     public void entrar(View v){
+        try{
         mAuth.signInWithEmailAndPassword(et_usuario.getText().toString(),et_contrasena.getText().toString())
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -83,7 +84,10 @@ et_usuario=(EditText)findViewById(R.id.et_correo);
                             startActivity(new Intent(getApplicationContext(),Rol.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                         }
                     }
-                });
+                });}catch (Exception e){
+            Toast.makeText(getApplicationContext(), "Usuario o contraseña inválidos",
+                    Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void registrarse(View v){

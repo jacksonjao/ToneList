@@ -34,47 +34,37 @@
             android:textColor="@color/colorAccent"
             android:textSize="@dimen/big" />
 
-        <Button
-            android:id="@+id/btn_escanearQr"
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/btn_validar"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="10dp"
-            android:background="@drawable/botones_principales"
-            android:fontFamily="@string/font_family_regular"
-            android:text="@string/escanearQR"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/medium"
-            />
+
 
         <EditText
             android:id="@+id/et_escribeCodigo"
-            android:layout_width="150dp"
+            android:layout_width="250dp"
             android:layout_height="50dp"
             android:hint="@string/escribeElCodigo"
             android:fontFamily="@string/font_family_light"
             android:textColor="@color/colorAccent"
+            android:layout_below="@+id/tv_slogan"
+            android:layout_marginTop="20dp"
             android:textColorHint="@color/colorAccent"
-            android:layout_alignTop="@+id/btn_validar"
             android:textSize="@dimen/medium"
-            android:layout_alignStart="@+id/btn_escanearQr" />
+            android:layout_alignStart="@+id/btn_validar" />
 
         <Button
+
+
             android:id="@+id/btn_validar"
-            android:layout_width="80dp"
+            android:layout_width="250dp"
             android:layout_height="50dp"
+            android:layout_below="@+id/et_escribeCodigo"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
             android:background="@drawable/botones_principales"
             android:fontFamily="@string/font_family_regular"
             android:text="@string/validar"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
             android:textSize="@dimen/medium"
-            android:layout_below="@+id/tv_slogan"
-            android:layout_alignEnd="@+id/btn_escanearQr"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+
             android:onClick="validar"
             />
 

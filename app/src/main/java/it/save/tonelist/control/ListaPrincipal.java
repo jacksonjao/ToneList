@@ -86,7 +86,7 @@ public class ListaPrincipal extends AppCompatActivity {
 
         if(!user.getEmail().toString().equals("anon@anon.com")){
         drawerLayout.openDrawer(menu);}else{
-            Toast.makeText(getApplicationContext(),"Para mas opciones, debes registrarte",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Para más opciones, debes registrarte",Toast.LENGTH_SHORT).show();
         }
 
     }
