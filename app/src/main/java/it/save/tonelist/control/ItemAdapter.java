@@ -64,6 +64,9 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
                     if (btn.isChecked()) {
                         Log.d("firebaseVote", "Inicio de voto de firebase");
                         firebase.addVoto(codigoFiesta, ts.trackId);
+                    } else {
+                        Log.d("firebaseVote", "Inicio de voto de firebase");
+                        firebase.addVotoNegativo(codigoFiesta, ts.trackId);
                     }
                 }
             });

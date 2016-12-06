@@ -45,4 +45,21 @@ public class SubirFirebase {
 
     }
 
+    public void addVotoNegativo(final String listCode, final String songCode) {
+        listReference.child("lists").child(listCode).child("songs").child(songCode).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                long data = (long) dataSnapshot.getValue();
+                listReference.child("lists").child(listCode).child("songs").child(songCode).setValue(data - 1);
+                Log.d("vote", "onDataChange: " + (data - 1));
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Log.d("OnCancelled", "onCancelled: " + databaseError);
+            }
+        });
+
+    }
+
 }
