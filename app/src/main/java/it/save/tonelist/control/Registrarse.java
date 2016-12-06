@@ -37,8 +37,9 @@ public class Registrarse extends AppCompatActivity {
 
 
     public void registrarse(View v){
+        try{
         System.out.println(et_usuario.getText().toString()+" y "+et_contrasena.getText().toString());
-        mAuth.createUserWithEmailAndPassword("juli@icloud.com","1234567s")
+        mAuth.createUserWithEmailAndPassword(et_usuario.getText().toString(),et_contrasena.getText().toString())
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -56,7 +57,10 @@ public class Registrarse extends AppCompatActivity {
 
                         // ...
                     }
-                });
+                });}catch (Exception e){
+            Toast.makeText(Registrarse.this, "Usuario o contraseña inválidos",
+                    Toast.LENGTH_SHORT).show();
+        }
 
     }
 }

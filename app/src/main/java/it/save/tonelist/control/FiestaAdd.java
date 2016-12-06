@@ -16,6 +16,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -47,7 +48,7 @@ public class FiestaAdd extends AppCompatActivity {
     ImageView iv_logo;
     byte[] bytesImagen;
     private StorageReference mStorageRef;
-
+boolean agregarTodo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,13 +70,21 @@ public class FiestaAdd extends AppCompatActivity {
         drawerLayout.setScrimColor(Color.argb(230, 0, 0, 0));
         iv_logo = (ImageView) findViewById(R.id.iv_logo);
         validarMenu();
+        agregarTodo=true;
     }
 
     public void anadirFiesta(View view) {
-        registrarDatos(bytesImagen);
+        if(agregarTodo){
+            agregarTodo=false;
+        String ev=etEvento.getText().toString();
+        String di= etDireccion.getText().toString();
+        if(ev.matches("[a-zA-Z_0-9]+") && di.matches("[a-zA-Z_0-9]+")){
+        registrarDatos(bytesImagen);}else{
+            Toast.makeText(getApplicationContext(), "La fiesta debe contener información",
+                    Toast.LENGTH_SHORT).show();
+        }
 
-
-        System.out.println();
+    }
     }
 
     public void addImage(View v) {
@@ -108,9 +117,8 @@ public class FiestaAdd extends AppCompatActivity {
 
 
     public void registrarDatos(byte[] file) {
-
+try{
         StorageReference riversRef = mStorageRef.child("images/" + Calendar.getInstance().getTime() + ".jpg");
-
         riversRef.putBytes(file)
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
@@ -135,10 +143,14 @@ public class FiestaAdd extends AppCompatActivity {
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception exception) {
-                        // Handle unsuccessful uploads
-                        // ...
+                        agregarTodo=true;
+                        Toast.makeText(getApplicationContext(), "No se pudo guardar la lista, intente nuevamente",
+                                Toast.LENGTH_SHORT).show();
                     }
-                });
+                });}catch (Exception e){
+    Toast.makeText(getApplicationContext(), "La fiesta debe contener información",
+            Toast.LENGTH_SHORT).show();
+                }
     }
 
 
