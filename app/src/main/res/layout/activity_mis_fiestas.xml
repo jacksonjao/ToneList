@@ -27,7 +27,7 @@
             android:layout_alignParentRight="true"
             android:layout_margin="30dp"
             android:background="@drawable/button_float"
-            android:translationZ="6dp"
+            android:elevation="16dp"
             android:onClick="addFiesta" />
 
     </RelativeLayout>

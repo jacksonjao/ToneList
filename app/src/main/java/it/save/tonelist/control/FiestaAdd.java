@@ -78,10 +78,11 @@ boolean agregarTodo;
             agregarTodo=false;
         String ev=etEvento.getText().toString();
         String di= etDireccion.getText().toString();
-        if(ev.matches("[a-zA-Z_0-9]+") && di.matches("[a-zA-Z_0-9]+")){
+        if(!ev.equals("")||!di.equals("")){
         registrarDatos(bytesImagen);}else{
             Toast.makeText(getApplicationContext(), "La fiesta debe contener información",
                     Toast.LENGTH_SHORT).show();
+            agregarTodo=true;
         }
 
     }

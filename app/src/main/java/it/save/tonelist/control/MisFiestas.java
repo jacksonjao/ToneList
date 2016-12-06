@@ -62,7 +62,7 @@ public class MisFiestas extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(fiestasAdapter);
         validarMenu();
-
+        tv_listaPrincipal.setText(getResources().getString(R.string.mis_fiestas));
         database = FirebaseDatabase.getInstance();
         listsReference = database.getReference().child("lists");
         cargarUsuario();
