@@ -72,12 +72,13 @@ public class ListaPrincipal extends AppCompatActivity {
 
         //Busqueda en spotify
         trackList = new ArrayList<>();
-        itemAdapter = new ItemAdapter(trackList, ItemAdapter.LIKE, "00000");
+        itemAdapter = new ItemAdapter(trackList, ItemAdapter.LIKE, getIntent().getStringExtra("code"));
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(itemAdapter);
         databaseReference = firebase.getReference();
 
         cargarKeys(getIntent().getStringExtra("code"));
+        System.out.println(getIntent().getStringExtra("code"));
         validarMenu();
     }
 
