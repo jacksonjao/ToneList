@@ -5,7 +5,7 @@
     <string name="iniciarSesion">Iniciar Sesión</string>
     <string name="votarSinRegistro">Comenzar a votar!</string>
     <string name="registrate">Regístrate!</string>
-    <string name="mensajeQr">Escribe el código o escanea el QR de la fiesta.</string>
+    <string name="mensajeQr">Escribe el código de la fiesta.</string>
     <string name="escanearQR">Escanear QR</string>
     <string name="escribeElCodigo">Escribe el código</string>
     <string name="validar">Validar</string>

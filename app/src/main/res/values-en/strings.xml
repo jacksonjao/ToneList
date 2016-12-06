@@ -6,7 +6,7 @@
     <string name="iniciarSesion">Sign in</string>
     <string name="votarSinRegistro">Start to vote!</string>
     <string name="registrate">Register!</string>
-    <string name="mensajeQr">Fill in the QR-Code.</string>
+    <string name="mensajeQr">Write the party's code</string>
     <string name="escanearQR">Scan the QR-Code</string>
     <string name="escribeElCodigo">Write the QR-Code</string>
     <string name="validar">Validate</string>

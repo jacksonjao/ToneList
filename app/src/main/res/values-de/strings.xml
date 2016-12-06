@@ -6,9 +6,9 @@
     <string name="iniciarSesion">Beginnen</string>
     <string name="votarSinRegistro">Anfangen zu wählen!</string>
     <string name="registrate">Regestrieren!</string>
-    <string name="mensajeQr">Fügen den QR-Code hinzu.</string>
+    <string name="mensajeQr">Fügen den hinzu.</string>
     <string name="escanearQR">Scanne den QR-Code</string>
-    <string name="escribeElCodigo">Tippe den QR-Code manuel ein</string>
+    <string name="escribeElCodigo">Tippe den  manuel ein</string>
     <string name="validar">Validieren</string>
     <string name="lista_principal">Ausgangs Liste</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
