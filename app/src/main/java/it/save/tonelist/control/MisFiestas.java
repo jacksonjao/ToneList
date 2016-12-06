@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -147,6 +148,16 @@ public class MisFiestas extends AppCompatActivity {
         finish();
     }
 
+    public void nuestrosAliados(View v){
+        Toast.makeText(getApplicationContext(),"Actividad en desarrollo",Toast.LENGTH_SHORT).show();
+    }
 
+    public void contacto(View v){
+        Toast.makeText(getApplicationContext(),"Actividad en desarrollo",Toast.LENGTH_SHORT).show();
+    }
+
+    public void nosotros(View v){
+        Toast.makeText(getApplicationContext(),"Actividad en desarrollo",Toast.LENGTH_SHORT).show();
+    }
 
 }

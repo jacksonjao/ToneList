@@ -18,6 +18,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.SearchView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -190,5 +191,19 @@ public class EditarLista extends AppCompatActivity implements SearchView.OnQuery
         for (TrackSimple t : tracks) {
             System.out.println(t.trackId + " - " + t.name + " - " + t.album + " - " + t.imgURL);
         }
+    }
+
+
+
+    public void nuestrosAliados(View v){
+        Toast.makeText(getApplicationContext(),"Actividad en desarrollo",Toast.LENGTH_SHORT).show();
+    }
+
+    public void contacto(View v){
+        Toast.makeText(getApplicationContext(),"Actividad en desarrollo",Toast.LENGTH_SHORT).show();
+    }
+
+    public void nosotros(View v){
+        Toast.makeText(getApplicationContext(),"Actividad en desarrollo",Toast.LENGTH_SHORT).show();
     }
 }

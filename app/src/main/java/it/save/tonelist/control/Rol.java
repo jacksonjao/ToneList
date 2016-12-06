@@ -25,4 +25,10 @@ public class Rol extends AppCompatActivity {
     public void espectador(View v){
         startActivity(new Intent(getApplicationContext(), LeerQr.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
     }
+
+
+    @Override
+    public void onBackPressed() {
+        return;
+    }
 }

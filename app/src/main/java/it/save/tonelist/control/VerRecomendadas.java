@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import it.save.tonelist.R;
 
@@ -66,5 +67,17 @@ public class VerRecomendadas extends AppCompatActivity {
     public void cambiarRol(View v) {
         startActivity(new Intent(getApplicationContext(), Rol.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         finish();
+    }
+
+    public void nuestrosAliados(View v){
+        Toast.makeText(getApplicationContext(),"Actividad en desarrollo",Toast.LENGTH_SHORT).show();
+    }
+
+    public void contacto(View v){
+        Toast.makeText(getApplicationContext(),"Actividad en desarrollo",Toast.LENGTH_SHORT).show();
+    }
+
+    public void nosotros(View v){
+        Toast.makeText(getApplicationContext(),"Actividad en desarrollo",Toast.LENGTH_SHORT).show();
     }
 }

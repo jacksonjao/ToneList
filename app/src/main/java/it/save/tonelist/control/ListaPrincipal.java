@@ -125,8 +125,9 @@ public class ListaPrincipal extends AppCompatActivity {
     }
 
     public void recomendarCanciones(View v) {
-        startActivity(new Intent(getApplicationContext(), RecomendarCanciones.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        finish();
+        Toast.makeText(getApplicationContext(),"Actividad en desarrollo",Toast.LENGTH_SHORT).show();
+       /* startActivity(new Intent(getApplicationContext(), RecomendarCanciones.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        finish();*/
     }
 
     public void cambiarRol(View v) {
@@ -135,8 +136,10 @@ public class ListaPrincipal extends AppCompatActivity {
     }
 
     public void cancionesRecomendadas(View v) {
-        startActivity(new Intent(getApplicationContext(), CancionesRecomendadas.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        finish();
+        Toast.makeText(getApplicationContext(),"Actividad en desarrollo",Toast.LENGTH_SHORT).show();
+
+      /*  startActivity(new Intent(getApplicationContext(), CancionesRecomendadas.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        finish();*/
     }
 
 
@@ -148,6 +151,18 @@ public class ListaPrincipal extends AppCompatActivity {
     public void cerrarSesion(View v) {
         startActivity(new Intent(getApplicationContext(), Login.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         finish();
+    }
+
+    public void nuestrosAliados(View v){
+        Toast.makeText(getApplicationContext(),"Actividad en desarrollo",Toast.LENGTH_SHORT).show();
+    }
+
+    public void contacto(View v){
+        Toast.makeText(getApplicationContext(),"Actividad en desarrollo",Toast.LENGTH_SHORT).show();
+    }
+
+    public void nosotros(View v){
+        Toast.makeText(getApplicationContext(),"Actividad en desarrollo",Toast.LENGTH_SHORT).show();
     }
 
 

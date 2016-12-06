@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
@@ -22,6 +23,7 @@ public class Fiesta extends AppCompatActivity {
     RelativeLayout menu;
     DrawerLayout drawerLayout;
     ImageView ivLogo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,28 +36,26 @@ public class Fiesta extends AppCompatActivity {
         //controlo el menu desplegable
         menu = (RelativeLayout) findViewById(R.id.dl_menu);
         drawerLayout = (DrawerLayout) findViewById(R.id.activity_lista);
-        drawerLayout.setScrimColor(Color.argb(230,0,0,0));
+        drawerLayout.setScrimColor(Color.argb(230, 0, 0, 0));
 
         Picasso.with(this).load(getIntent().getStringExtra("url")).into(ivLogo);
         validarMenu();
     }
 
 
-
-    public void cancionesVotadas(View v){
+    public void cancionesVotadas(View v) {
         startActivity(new Intent(getApplicationContext(), VerVotadas.class).putExtra("code", getIntent().getStringExtra("code")));
 
     }
 
-    public void cancionesRecomendadas(View v){
-        startActivity(new Intent(getApplicationContext(), VerRecomendadas.class));
+    public void cancionesRecomendadas(View v) {
+      //  startActivity(new Intent(getApplicationContext(), VerRecomendadas.class));
+        Toast.makeText(getApplicationContext(), "Actividad en desarrollo", Toast.LENGTH_SHORT).show();
 
     }
 
 
-
-
-    public void modificarLista(View v){
+    public void modificarLista(View v) {
         startActivity(new Intent(getApplicationContext(), EditarLista.class).putExtra("code", getIntent().getStringExtra("code")));
     }
 
@@ -64,12 +64,11 @@ public class Fiesta extends AppCompatActivity {
 
     }
 
-    public void validarMenu(){
+    public void validarMenu() {
         tv_listaPrincipal.setText(getIntent().getStringExtra("name"));
     }
 
-    public void misFiestas(View v){
-
+    public void misFiestas(View v) {
 
         startActivity(new Intent(getApplicationContext(), MisFiestas.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         finish();
@@ -83,13 +82,27 @@ public class Fiesta extends AppCompatActivity {
     }
 
     public void cerrarSesion(View v) {
-        startActivity(new Intent(getApplicationContext(), Login.class));
+        startActivity(new Intent(getApplicationContext(), Login.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        finish();
+        Toast.makeText(getApplicationContext(), "Cerró sesión satisfactoriamente", Toast.LENGTH_SHORT).show();
 
     }
 
     public void cambiarRol(View v) {
         startActivity(new Intent(getApplicationContext(), Rol.class));
 
+    }
+
+    public void nuestrosAliados(View v) {
+        Toast.makeText(getApplicationContext(), "Actividad en desarrollo", Toast.LENGTH_SHORT).show();
+    }
+
+    public void contacto(View v) {
+        Toast.makeText(getApplicationContext(), "Actividad en desarrollo", Toast.LENGTH_SHORT).show();
+    }
+
+    public void nosotros(View v) {
+        Toast.makeText(getApplicationContext(), "Actividad en desarrollo", Toast.LENGTH_SHORT).show();
     }
 
 
