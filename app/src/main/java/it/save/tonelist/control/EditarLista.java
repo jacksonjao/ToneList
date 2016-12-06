@@ -180,7 +180,7 @@ public class EditarLista extends AppCompatActivity implements SearchView.OnQuery
             temp.artist = t.artists.get(0).name;
             temp.imgURL = t.album.images.get(0).url;
             temp.liked = false;
-            new DownloadImageTask(temp).execute(temp.imgURL);
+
             tsList.add(temp);
         }
         return tsList;

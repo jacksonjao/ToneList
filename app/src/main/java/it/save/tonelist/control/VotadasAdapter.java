@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
 
 import it.save.tonelist.R;
@@ -44,7 +46,7 @@ public class VotadasAdapter extends RecyclerView.Adapter<VotadasAdapter.VotadasV
         holder.vName.setText(ts.name);
         holder.vArtirst.setText(ts.artist);
         holder.vAlbum.setText(ts.album);
-        holder.image.setImageBitmap(ts.image);
+        Picasso.with(holder.itemView.getContext()).load(ts.imgURL).into(holder.image);
         holder.vLikes.setText(ts.likes + "");
 
 

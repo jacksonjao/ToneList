@@ -129,7 +129,6 @@ public class VerVotadas extends AppCompatActivity {
                         ts = child.getValue(TrackSimple.class);
                         ts.likes = likes;
                         Log.d("cargaImagen", ts.name + " " + ts.imgURL);
-                        ts.cargarImagen();
                         trackList.add(ts);
                     }
                 }

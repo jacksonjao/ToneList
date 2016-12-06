@@ -21,24 +21,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
-        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.6.1_801f7507598fa6349049f33d22d374ec5a186c6f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.6.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="77558e74bb2056ef38516296f13a27c4c4fc3e5c">
-        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.6.1_fa510b1e7683c1d47b1278019df642ffb45ecb88\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -54,6 +36,150 @@
         revision="24.0.1"
         sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
         <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.3.1_31ba8649e28e68297e7a3d0fdd8f1cdc8a14a19c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_a31c9782b854e6179fa6910a2ce189389aabbab4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_09b3f579db49659b6483b6c6e18767ae4f1f302e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andres Villegas\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_d2a5905f17b7d6fb56e6da157f47f544f58c1a33\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andres Villegas\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\retrofit\1.9.0\a681c044244d9fc375198588297a39ba78028423\retrofit-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-1.9.0_d539150d4e8cf4c29dd07157a0661452b23f8e1d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.github.kaaes\spotify-web-api-android\0.4.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="785444f1c6a6b880b9aa0efb9a2464cb6c51f8dc">
+        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.kaaes-spotify-web-api-android-0.4.1_a3d6dc94324d782cdaba11eef9dadce6311da546\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_fe9d0189c8305cc8cb84b96aa1ca684c9d0bbc9c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_1aef88a0f8143d0be16338d1e356f6de5fab31af\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="159494eb362396d073d8c922b77e40c0da5fc5bc">
+        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-9.6.1_ef5819a7d44342ece99fbf207410fb41450810b5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_8ef3cfb5ac276cc00c5785816915a26b5ba9917d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
+        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.6.1_0b1458a73c7684dc1387942030884251e6f82306\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_bea10cc42ff7c6553e0c1436947650bbc8d5ae8d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_7b7593eaf2e479c30f5e6d6458b60c08384fd381\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.2.1_4e30ec92f81462d731c8e74017444464f9cf38c9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
+        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.6.1_7567b6a938eb5a9855f5a8b8572caeb7cf697330\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
+        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.6.1_801f7507598fa6349049f33d22d374ec5a186c6f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="77558e74bb2056ef38516296f13a27c4c4fc3e5c">
+        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.6.1_fa510b1e7683c1d47b1278019df642ffb45ecb88\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -75,30 +201,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_a31c9782b854e6179fa6910a2ce189389aabbab4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
         sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
         <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_0dd163389573991c85469b4be37b7b10759449ce\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_09b3f579db49659b6483b6c6e18767ae4f1f302e\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -111,48 +219,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.github.kaaes\spotify-web-api-android\0.4.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="785444f1c6a6b880b9aa0efb9a2464cb6c51f8dc">
-        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.kaaes-spotify-web-api-android-0.4.1_a3d6dc94324d782cdaba11eef9dadce6311da546\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Andres Villegas\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\retrofit\1.9.0\a681c044244d9fc375198588297a39ba78028423\retrofit-1.9.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="a681c044244d9fc375198588297a39ba78028423">
-        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-1.9.0_d539150d4e8cf4c29dd07157a0661452b23f8e1d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
         sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
         <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_c9a22720c640dcc724135c23cd8c360a32d8e988\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_fe9d0189c8305cc8cb84b96aa1ca684c9d0bbc9c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\9.6.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="8c6ef5bd4072f8cda2b89d8356ea7d8acd0683aa">
-        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-9.6.1_a08b6ac84ff5660e3e9da628d9a11767d81cf85c\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -165,21 +237,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\9.6.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_1aef88a0f8143d0be16338d1e356f6de5fab31af\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.6.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="159494eb362396d073d8c922b77e40c0da5fc5bc">
-        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-9.6.1_ef5819a7d44342ece99fbf207410fb41450810b5\classes.dex" />
+        sha1="8c6ef5bd4072f8cda2b89d8356ea7d8acd0683aa">
+        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-9.6.1_a08b6ac84ff5660e3e9da628d9a11767d81cf85c\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -219,30 +282,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_8ef3cfb5ac276cc00c5785816915a26b5ba9917d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
         sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
         <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_356abf165c7ce46bf9e7545d330e3840bf6c059a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
-        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.6.1_0b1458a73c7684dc1387942030884251e6f82306\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -255,24 +300,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_bea10cc42ff7c6553e0c1436947650bbc8d5ae8d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_7b7593eaf2e479c30f5e6d6458b60c08384fd381\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.6.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -282,20 +309,11 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
-        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.2.1_4e30ec92f81462d731c8e74017444464f9cf38c9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="8734edd65d5c94749953c977e1d47ef48b93dacd">
+        sha1="dc551b10d3edc2a37a9c31608088d194fbe4acc3">
         <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e9b1a51b65cfe729f5bec5c29eac692546575a6f\classes.dex" />
     </item>
     <item
@@ -306,15 +324,6 @@
         revision="24.0.1"
         sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
         <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_545fc862462d79bfc300873d8a1e7c7f87473b1e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
-        <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.6.1_7567b6a938eb5a9855f5a8b8572caeb7cf697330\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -331,7 +340,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="f92c126efe7cae5126df93f1ac14ba3157f4e612">
+        sha1="a3787e7ad3aa2a747e27a4081575aa0176f7f3ff">
         <dex dex="C:\Dev\AndroidStudioProjects\ToneList\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_fb7059914ab02cb04f00267bbdbd1a639f67eb1c\classes.dex" />
     </item>
 

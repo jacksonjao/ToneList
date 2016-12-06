@@ -3,7 +3,6 @@ package it.save.tonelist.control;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -188,7 +187,6 @@ public class ListaPrincipal extends AppCompatActivity {
                         ts.trackId = child.getKey();
                         ts.likes = likes;
                         Log.d("cargaImagen", ts.name + " " + ts.imgURL);
-                        ts.cargarImagen();
                         trackList.add(ts);
                     }
                 }

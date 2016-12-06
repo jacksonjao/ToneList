@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
 
 import it.save.tonelist.R;
@@ -52,7 +54,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         holder.vName.setText(ts.name);
         holder.vArtirst.setText(ts.artist);
         holder.vAlbum.setText(ts.album);
-        holder.image.setImageBitmap(ts.image);
+        Picasso.with(holder.itemView.getContext()).load(ts.imgURL).into(holder.image);
         holder.bLike.setChecked(ts.liked);
 
         if (tipo == LIKE) {
