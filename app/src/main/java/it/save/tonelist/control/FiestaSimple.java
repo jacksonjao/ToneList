@@ -3,6 +3,7 @@ package it.save.tonelist.control;
 import com.google.firebase.database.Exclude;
 import com.google.firebase.database.IgnoreExtraProperties;
 
+import java.io.Serializable;
 import java.util.HashMap;
 
 /**
@@ -10,19 +11,19 @@ import java.util.HashMap;
  */
 
 @IgnoreExtraProperties
-public class FiestaSimple {
+public class FiestaSimple implements Serializable {
 
-    protected long creationDate;
-    protected String creator;
-    protected String name;
-    protected String imgUrl;
-    protected String direccion;
-
-    @Exclude
-    protected String code;
+    public long creationDate;
+    public String creator;
+    public String name;
+    public String imgUrl;
+    public String direccion;
 
     @Exclude
-    protected HashMap<String, Integer> songs = new HashMap<>();
+    public String code;
+
+    @Exclude
+    public HashMap<String, Integer> songs = new HashMap<>();
 
     public FiestaSimple() {
 

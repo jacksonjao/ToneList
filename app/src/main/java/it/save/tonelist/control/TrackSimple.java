@@ -2,23 +2,25 @@ package it.save.tonelist.control;
 
 import com.google.firebase.database.Exclude;
 
+import java.io.Serializable;
+
 /**
  * Created by Andres Villegas on 2016-11-25.
  */
 
-public class TrackSimple {
+public class TrackSimple implements Serializable {
 
-    protected String trackId;
-    protected String name;
-    protected String artist;
-    protected String album;
-    protected String imgURL;
-
-    @Exclude
-    protected boolean liked;
+    public String trackId;
+    public String name;
+    public String artist;
+    public String album;
+    public String imgURL;
 
     @Exclude
-    protected long likes;
+    public boolean liked;
+
+    @Exclude
+    public long likes;
 
     public TrackSimple() {
     }

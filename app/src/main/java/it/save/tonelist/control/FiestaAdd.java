@@ -191,6 +191,17 @@ try{
         redimension = (scale * h) / w;
         return redimension;
     }
+    public void nuestrosAliados(View v) {
+        Toast.makeText(getApplicationContext(), "Actividad en desarrollo", Toast.LENGTH_SHORT).show();
+    }
+
+    public void contacto(View v) {
+        Toast.makeText(getApplicationContext(), "Actividad en desarrollo", Toast.LENGTH_SHORT).show();
+    }
+
+    public void nosotros(View v) {
+        Toast.makeText(getApplicationContext(), "Actividad en desarrollo", Toast.LENGTH_SHORT).show();
+    }
 
     @Override
     public void onBackPressed() {

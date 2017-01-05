@@ -12,6 +12,7 @@
         android:background="@drawable/background">
         <include layout="@layout/espectador_bar_menu" />
         <include layout="@layout/espectador_contenido_lista" />
+
     </LinearLayout>
 
 
